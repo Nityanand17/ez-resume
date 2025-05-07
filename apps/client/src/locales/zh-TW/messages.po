@@ -1,0 +1,1750 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2023-11-10 13:15+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: zh\n"
+"Project-Id-Version: reactive-resume\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-01-27 08:34\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Traditional\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: reactive-resume\n"
+"X-Crowdin-Project-ID: 503410\n"
+"X-Crowdin-Language: zh-TW\n"
+"X-Crowdin-File: messages.po\n"
+"X-Crowdin-File-ID: 494\n"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:171
+msgid "You have enabled two-factor authentication successfully."
+msgstr "您已成功啟用雙因子驗證。"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:57
+msgid "{templatesCount} resume templates to choose from"
+msgstr "{templatesCount} 個履歷範本可以選擇"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:142
+msgid "{value, plural, one {Column} other {Columns}}"
+msgstr "{value, plural, one {欄} other {欄目}}"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:20
+msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
+msgstr "<0>我花費了自己大量的業餘時間開發了 Reactive Resume，並得到了其他優秀開源貢獻者的大力幫助。</0> <1>如果您喜歡Reactive Resume提供的服務，您的任何捐助都會幫助這項免費的服務持續進步，幫助更多有需要的人。</1>"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:51
+msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If you faced any issues while creating your resume, or have an idea that would help you and other users in creating your resume more easily, drop an issue on the repository or send me an email about it.</1>"
+msgstr "<0>我相信這隻應用程式還不夠完美，但希望它能夠與日俱進。</0><1>如果您在創建簡歷時遇到任何問題，或者有其他可以幫助您和其他人的想法讓使用者可以更輕鬆地創建履歷，請在 Repository 發送 issue 或將相關問題的 email 寄送給我。</1>"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:201
+msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
+msgstr "<0>注意：</0>使用 OpenAI API 即表示您承認並接受<1>使用條款</1>和<2>隱私權政策</2>OpenAI 概述。請注意，Reactive Resume 對任何不當或未經授權的服務使用不承擔任何責任，由此產生的任何影響或責任僅由使用者承擔。"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:85
+msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
+msgstr "<0>社群花了大量時間編寫 Reactive Resume 的文檔，我相信它將幫助您開始使用該應用程式。</0> <1>還有很多範例可以幫助您入門，以及您可能不知道的功能可以幫助您建立完美的履歷。</1>"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:140
+msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
+msgstr "<0>目前已停用雙因子驗證。</0> 您可以透過驗證器應用程式的新增來啟用它。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:133
+msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a code every time you sign in."
+msgstr "<0>已啟用雙因子驗證。</0>每次登入時，系統都會要求您輸入驗證碼。"
+
+#: apps/client/src/pages/home/page.tsx:24
+#: apps/client/src/pages/home/sections/hero/index.tsx:40
+msgid "A free and open-source resume builder"
+msgstr "一個免費且開源的簡歷建立工具"
+
+#: apps/client/src/pages/home/components/footer.tsx:21
+#: apps/client/src/pages/home/sections/hero/index.tsx:45
+msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+msgstr "一個免費且開放原始碼的履歷建立工具，可簡化建立、更新及分享履歷的程序。"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:59
+#: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:29
+msgid "A link has been copied to your clipboard."
+msgstr "連接已複製到您的剪貼簿。"
+
+#: apps/client/src/components/copyright.tsx:29
+msgid "A passion project by <0>Amruth Pillai</0>"
+msgstr "一個由 <0>Amruth Pillai</0> 的熱血專案"
+
+#: apps/client/src/pages/auth/forgot-password/page.tsx:57
+msgid "A password reset link should have been sent to your inbox, if an account existed with the email you provided."
+msgstr "如果您提供的電子郵件帳號存在，密碼重設連結應已發送到您的收件匣。"
+
+#: apps/client/src/services/errors/translate-error.ts:43
+msgid "A resume with this slug already exists, please pick a different unique identifier."
+msgstr "包含此別名的履歷已存在，請選擇其他唯一識別碼。"
+
+#: apps/client/src/services/errors/translate-error.ts:10
+msgid "A user with this email address and/or username already exists."
+msgstr "此電子郵件地址和/或使用者名稱已存在。"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:43
+msgid "A4"
+msgstr "A4"
+
+#. Helper text to let the user know what filetypes are accepted. {accept} can be .pdf or .json.
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:270
+msgid "Accepts only {accept} files"
+msgstr "只接受 {accept} 檔案"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:105
+msgid "Account"
+msgstr "帳號"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:175
+msgid "Add a custom field"
+msgstr "新增自訂欄位"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:119
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-base.tsx:170
+msgctxt "For example, add a new work experience, or add a new profile."
+msgid "Add a new item"
+msgstr "新增項目"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:91
+msgid "Add a new item"
+msgstr "新增項目"
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:146
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:263
+msgid "Add a new section"
+msgstr "新增段落"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:261
+msgid "Add New Page"
+msgstr "新增頁面"
+
+#: apps/client/src/components/ai-actions.tsx:79
+msgid "AI"
+msgstr "AI"
+
+#: apps/client/src/pages/auth/register/page.tsx:71
+msgid "Already have an account?"
+msgstr "已經有一個帳戶？"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:144
+msgid "An error occurred while validating the file."
+msgstr "驗證檔案時發生錯誤。"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:134
+msgid "and many more..."
+msgstr "還有很多..."
+
+#: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:57
+msgid "Anyone with the link can view and download the resume."
+msgstr "任何擁有連結的人都可以檢視和下載履歷。"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:60
+#: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:30
+msgid "Anyone with this link can view and download the resume. Share it on your profile or with recruiters."
+msgstr "任何人都可以使用此鏈接檢視並下載履歷。在您的個人資料上或與招聘人員分享。"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/css.tsx:41
+msgid "Apply Custom CSS"
+msgstr "套用自訂 CSS"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:128
+msgid "Are you sure you want to delete this item?"
+msgstr "確定要刪除此項目嗎?"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:149
+msgid "Are you sure you want to delete your resume?"
+msgstr "您確定要刪除您的履歷嗎？"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:125
+msgid "Are you sure you want to disable two-factor authentication?"
+msgstr "您確定要停用雙因子驗證？"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:38
+msgid "Are you sure you want to lock this resume?"
+msgstr "您確定要鎖定這份履歷嗎？"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:39
+msgid "Are you sure you want to unlock this resume?"
+msgstr "您確定要解鎖這份履歷嗎？"
+
+#: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:94
+msgid "Are you sure?"
+msgstr "你確定嗎？"
+
+#. For example, Computer Science or Business Administration
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:73
+msgid "Area of Study"
+msgstr "學習領域"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:79
+msgid "Aspect Ratio"
+msgstr "顯示比例"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:51
+msgid "Available in {languagesCount} languages"
+msgstr "{languagesCount} 種語言可用"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:53
+msgid "Awarder"
+msgstr "頒獎者"
+
+#: apps/client/src/pages/auth/backup-otp/page.tsx:99
+#: apps/client/src/pages/auth/forgot-password/page.tsx:100
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:243
+msgid "Back"
+msgstr "返回"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:73
+msgid "Background Color"
+msgstr "背景顏色"
+
+#: apps/client/src/pages/auth/backup-otp/page.tsx:75
+msgid "Backup Code"
+msgstr "備份代碼"
+
+#: apps/client/src/pages/auth/backup-otp/page.tsx:81
+msgid "Backup Codes may contain only lowercase letters or numbers, and must be exactly 10 characters."
+msgstr "備份碼只能包含小寫字母或數字，且必須正好為 10 個字元。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:132
+msgid "Base URL"
+msgstr "網站網址:"
+
+#: apps/client/src/pages/builder/sidebars/left/index.tsx:55
+msgctxt "The basics section of a resume consists of User's Picture, Full Name, Location etc."
+msgid "Basics"
+msgstr "基本資料"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:21
+msgid "Basics"
+msgstr "基本資料"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:191
+msgid "Border"
+msgstr "邊框"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:124
+msgid "Border Radius"
+msgstr "邊框弧度"
+
+#: apps/client/src/pages/public/page.tsx:93
+msgid "Built with"
+msgstr "使用建立"
+
+#: apps/client/src/components/copyright.tsx:27
+#: apps/client/src/pages/home/sections/contributors/index.tsx:20
+msgid "By the community, for the community."
+msgstr "來自社區，服務社區。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:135
+#: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:49
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:156
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:137
+msgid "Cancel"
+msgstr "取消"
+
+#: apps/client/src/components/ai-actions.tsx:103
+#: apps/client/src/components/ai-actions.tsx:106
+msgid "Casual"
+msgstr "休閒"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:130
+msgid "Center Artboard"
+msgstr "中心畫板"
+
+#: apps/client/src/pages/auth/reset-password/page.tsx:99
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:115
+msgid "Change Password"
+msgstr "更改密碼"
+
+#: apps/client/src/components/ai-actions.tsx:97
+msgid "Change Tone"
+msgstr "改變音調"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:186
+msgid "Changed your mind about the name? Give it a new one."
+msgstr "改變了對名稱的想法嗎？給它一個新名字。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:70
+msgid "Check your email for the confirmation link to update your email address."
+msgstr "查看電子郵件中的確認連結，以更新您的電子郵件地址。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:144
+msgid "Circle"
+msgstr "圓形"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:249
+msgid "Close"
+msgstr "關閉"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:201
+msgid "Code"
+msgstr "驗證碼"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:52
+msgid "Code must be exactly 6 digits long."
+msgstr "驗證碼必須是 6 位數字。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:136
+msgid "Columns"
+msgstr "欄"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:39
+msgid "Company"
+msgstr "公司"
+
+#: apps/client/src/components/ai-actions.tsx:115
+#: apps/client/src/components/ai-actions.tsx:118
+msgid "Confident"
+msgstr "自信"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:234
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:246
+msgid "Continue"
+msgstr "繼續"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:96
+msgid "Copy"
+msgstr "複製"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:164
+msgid "Copy Link to Resume"
+msgstr "複製連結到簡歷"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:78
+msgid "Copy to Clipboard"
+msgstr "複製到剪貼簿"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:179
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:244
+msgid "Create"
+msgstr "建立"
+
+#: apps/client/src/pages/auth/register/page.tsx:64
+#: apps/client/src/pages/auth/register/page.tsx:69
+msgid "Create a new account"
+msgstr "建立一個新帳戶"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:163
+msgid "Create a new item"
+msgstr "建立新項目"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:178
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-card.tsx:28
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/create-item.tsx:18
+msgid "Create a new resume"
+msgstr "建立新履歷"
+
+#: apps/client/src/pages/auth/login/page.tsx:65
+msgctxt "This is a link to create a new account"
+msgid "Create one now"
+msgstr "立即建立"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:259
+msgid "Create Sample Resume"
+msgstr "建立履歷表範本"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:82
+msgid "Current Password"
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:93
+#: apps/client/src/pages/builder/sidebars/right/sections/css.tsx:27
+#: apps/client/src/pages/builder/sidebars/right/sections/css.tsx:28
+msgid "Custom CSS"
+msgstr "自訂 CSS"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:62
+msgid "Custom resume sections"
+msgstr "自訂簡歷部分"
+
+#: apps/client/src/stores/resume.ts:47
+msgid "Custom Section"
+msgstr "客製化部分"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:60
+msgid "Customisable colour palettes"
+msgstr "可自訂的調色板"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:61
+msgid "Customisable layouts"
+msgstr "可自訂排版"
+
+#: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:62
+msgid "Danger Zone"
+msgstr "危險操作"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:87
+msgid "Dark"
+msgstr "暗色"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:67
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:67
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:67
+msgid "Date"
+msgstr "日期"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:87
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:110
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:72
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:80
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:67
+msgid "Date or Date Range"
+msgstr "日期或日期範圍"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:137
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:158
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:121
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:127
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:172
+msgid "Delete"
+msgstr "刪除"
+
+#: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:79
+#: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:94
+msgid "Delete Account"
+msgstr "刪除帳號"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:73
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:50
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:66
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:53
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:63
+msgid "Description"
+msgstr "詳細資訊"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:58
+msgid "Design single/multi page resumes"
+msgstr "設計單頁/多頁履歷表"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:139
+msgid "Disable"
+msgstr "停用"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:154
+msgid "Disable 2FA"
+msgstr "停用雙因子驗證（2FA）"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:302
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:220
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:134
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:118
+msgid "Discard"
+msgstr "放棄"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:105
+msgid "Documentation"
+msgstr "文件"
+
+#: apps/client/src/pages/auth/login/page.tsx:62
+msgid "Don't have an account?"
+msgstr "還沒有帳號嗎？"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:83
+msgid "Don't know where to begin? Hit the docs!"
+msgstr "不知道從何著手？點擊文件！"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:107
+msgid "Don't see your language? <0>Help translate the app.</0>"
+msgstr "沒有見到您的語言？<0>幫忙翻譯應用程式。</0>"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:40
+msgid "Donate to Reactive Resume"
+msgstr "捐助 Reactive Resume"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:56
+msgid "Download a JSON snapshot of your resume. This file can be used to import your resume in the future, or can even be shared with others to collaborate."
+msgstr "下載簡歷的 JSON 快照。此檔案可用於將來匯入您的履歷，甚至可以與他人分享以進行協作。"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:74
+msgid "Download a PDF of your resume. This file can be used to print your resume, send it to recruiters, or upload on job portals."
+msgstr "下載 PDF 簡歷。此檔案可用於列印您的履歷、傳送給招募人員或上傳至就業入口網站。"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:176
+msgid "Download PDF"
+msgstr "下載 PDF"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:58
+msgid "Downloads"
+msgstr "下載"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:181
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:246
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:105
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:95
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:156
+msgid "Duplicate"
+msgstr "複製"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:165
+msgid "Duplicate an existing item"
+msgstr "複製現有項目"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:180
+msgid "Duplicate an existing resume"
+msgstr "複製現有簡歷"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:92
+msgid "Edit"
+msgstr "編輯"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:169
+msgid "Effects"
+msgstr "效果"
+
+#: apps/client/src/pages/auth/forgot-password/page.tsx:82
+#: apps/client/src/pages/auth/login/page.tsx:90
+#: apps/client/src/pages/auth/register/page.tsx:141
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:54
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:181
+msgid "Email"
+msgstr "電子郵件"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:163
+msgid "Enable 2FA"
+msgstr "啟用雙因子驗證"
+
+#: apps/client/src/pages/auth/reset-password/page.tsx:67
+msgid "Enter a new password below, and make sure it's secure."
+msgstr "在下方輸入新密碼，並確保其安全性。"
+
+#: apps/client/src/pages/auth/backup-otp/page.tsx:59
+msgid "Enter one of the 10 backup codes you saved when you enabled two-factor authentication."
+msgstr "輸入您在啟用雙因子驗證時儲存的 10 個備份代碼之一。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:63
+msgid "Enter Phosphor Icon"
+msgstr "輸入螢光粉圖示"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:170
+msgid "Enter the 6-digit code from your authenticator app to verify that 2FA has been setup correctly."
+msgstr "輸入驗證器應用程式中的 6 位數代碼，以驗證 2FA 設定是否正確。"
+
+#: apps/client/src/pages/auth/verify-otp/page.tsx:60
+msgid "Enter the one-time password provided by your authenticator app below."
+msgstr "在下面輸入您的身份驗證器應用程式提供的一次性密碼。"
+
+#: apps/client/src/pages/auth/forgot-password/page.tsx:70
+msgid "Enter your email address and we will send you a link to reset your password if the account exists."
+msgstr "輸入您的電子郵件地址，如果帳戶存在，我們將向您發送重置密碼的網址。"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:283
+msgid "Errors"
+msgstr "錯誤"
+
+#: apps/client/src/pages/home/sections/support/index.tsx:78
+msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
+msgstr "即使您無法做出財務貢獻，您仍然可以透過為 GitHub 儲存庫加一顆星、向您的朋友傳播訊息或快速留言讓我知道 Reactive Resume 如何幫助您來發揮作用。我們始終歡迎並非常感謝您的回饋和支持！"
+
+#: apps/client/src/pages/home/sections/templates/index.tsx:12
+msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+msgstr "探索反應式履歷中提供的範本並查看用它們製作的履歷。它們還可以作為範例來幫助指導您下一份簡歷的創建。"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:121
+#: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:39
+#: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:40
+msgid "Export"
+msgstr "導出"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:255
+msgid "File"
+msgstr "檔案"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:221
+msgid "Filetype"
+msgstr "檔案類型"
+
+#: apps/client/src/pages/home/sections/hero/index.tsx:38
+msgid "Finally,"
+msgstr "最後，"
+
+#: apps/client/src/components/ai-actions.tsx:90
+msgid "Fix Spelling & Grammar"
+msgstr "修正拼字和語法"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:107
+msgid "Font Family"
+msgstr "字體"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:148
+msgid "Font Size"
+msgstr "字體大小"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:122
+msgid "Font Subset"
+msgstr "字體子集"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:134
+msgid "Font Variants"
+msgstr "字型變體"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:35
+msgid "For example, information regarding which companies you sent this resume to or the links to the job descriptions can be noted down here."
+msgstr "例如，您將這份履歷寄給哪些公司的相關資訊，或是工作說明的連結，都可以在這裡記下來。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:182
+msgid "Forget"
+msgstr "略過"
+
+#: apps/client/src/pages/auth/login/page.tsx:131
+msgid "Forgot Password?"
+msgstr "忘記密碼?"
+
+#: apps/client/src/pages/auth/forgot-password/page.tsx:68
+msgid "Forgot your password?"
+msgstr "忘記密碼？"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:32
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:40
+msgid "Format"
+msgstr "格式"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:49
+msgid "Found a bug, or have an idea for a new feature?"
+msgstr "發現錯誤或有新功能的想法？"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:46
+msgid "Free, forever"
+msgstr "永久免費"
+
+#: apps/client/src/components/ai-actions.tsx:121
+#: apps/client/src/components/ai-actions.tsx:124
+msgid "Friendly"
+msgstr "友善"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:31
+msgid "Full Name"
+msgstr "全名"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:202
+msgid "Generate a random title for your resume"
+msgstr "隨機產生簡歷標題"
+
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:32
+msgid "Get Started"
+msgstr "開始使用"
+
+#: apps/client/src/pages/auth/_components/social-auth.tsx:18
+msgid "GitHub"
+msgstr "GitHub"
+
+#: apps/client/src/pages/home/sections/statistics/index.tsx:12
+msgid "GitHub Stars"
+msgstr "GitHub 點讚數"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:187
+msgid "Give your old resume a new name."
+msgstr "為您的舊履歷起個新名字。"
+
+#: apps/client/src/pages/auth/verify-email/page.tsx:67
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:18
+msgid "Go to Dashboard"
+msgstr "前往儀表板"
+
+#: apps/client/src/pages/auth/_components/social-auth.tsx:31
+msgid "Google"
+msgstr "Google"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:202
+msgid "Grayscale"
+msgstr "灰階"
+
+#: apps/client/src/pages/dashboard/resumes/page.tsx:43
+msgid "Grid"
+msgstr "網格"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:43
+msgid "Headline"
+msgstr "標題"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:107
+msgid "Here, you can update your account information such as your profile picture, name and username."
+msgstr "在這裡，您可以更新您的帳戶資訊，例如個人檔案圖片、姓名和使用者名稱。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:68
+msgid "Here, you can update your profile to customize and personalize your experience."
+msgstr "在這裡，您可以更新個人資料，根據個人喜好定制和個人化使用體驗。"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:80
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:94
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:180
+msgid "Hidden"
+msgstr "隱藏"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:106
+msgid "Hide"
+msgstr "隱藏"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:192
+msgid "Hide Icons"
+msgstr "隱藏圖示"
+
+#: apps/client/src/pages/auth/login/page.tsx:115
+#: apps/client/src/pages/auth/register/page.tsx:168
+#: apps/client/src/pages/auth/reset-password/page.tsx:88
+msgid "Hold <0>Ctrl</0> to display your password temporarily."
+msgstr "按住 <0>Ctrl</0> 暫時顯示您的密碼。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:93
+msgid "Horizontal"
+msgstr "橫向"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:67
+msgid "Host your resume publicly"
+msgstr "公開您的履歷"
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:70
+msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
+msgstr "我總是很喜歡聽到 Reactive Resume 使用者的回饋或支援。以下是我收到的一些訊息。如果您有任何回饋，請隨時寫電子郵件到 <0>{email}</0>."
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:83
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:53
+msgid "Icon"
+msgstr "頭像"
+
+#: apps/client/src/pages/home/sections/logo-cloud/index.tsx:47
+msgid "If this app has helped you with your job hunt, let me know by reaching out through <0>this contact form</0>."
+msgstr "如果此應用程式對您的求職有幫助，請透過 <0>聯絡表單</0> 告訴我。"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:128
+msgid "If you disable two-factor authentication, you will no longer be required to enter a verification code when logging in."
+msgstr "如果停用雙因子驗證，登入時將不再需要輸入驗證碼。"
+
+#: apps/client/src/pages/home/sections/support/index.tsx:59
+msgid "If you're multilingual, we'd love your help in bringing the app to more languages and communities. Don't worry if you don't see your language on the list - just give me a shout-out on GitHub, and I'll make sure to include it. Ready to get started? Jump into translation over at Crowdin by clicking the link below."
+msgstr "如果您使用多種語言，我們希望您能協助我們將應用程式帶到更多語言和社群中。如果您沒有在清單上看到您的語言，也不用擔心，只要在 GitHub 上喊我一聲，我就會確保把您的語言納入其中。準備好開始了嗎？請點選以下連結，加入 Crowdin 的翻譯工作。"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:309
+msgid "Import"
+msgstr "匯入"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:208
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/import-card.tsx:28
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/import-item.tsx:17
+msgid "Import an existing resume"
+msgstr "匯入現有履歷"
+
+#: apps/client/src/components/ai-actions.tsx:85
+msgid "Improve Writing"
+msgstr "改善寫作"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:188
+msgid "In case you are unable to scan this QR Code, you can also copy-paste this link into your authenticator app."
+msgstr "如果您無法掃描此 QR 代碼，也可以將此連結複製貼到您的驗證器應用程式中。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:67
+msgid "In this section, you can change your password and enable/disable two-factor authentication."
+msgstr "在這部份，您可以變更密碼和啟用/停用雙因子驗證。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:64
+msgid "In this section, you can delete your account and all the data associated to your user, but please keep in mind that <0>this action is irreversible</0>."
+msgstr "在這部分，您可以刪除您的帳戶以及與您的使用者相關的所有資料，但請記住 <0>此動作是不可逆的</0>。"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:135
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:116
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:117
+msgid "Information"
+msgstr "詳細資訊"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:39
+msgid "Institution"
+msgstr "機構"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:53
+msgid "Issuer"
+msgstr "發行者"
+
+#: apps/client/src/services/errors/translate-error.ts:7
+msgid "It doesn't look like a user exists with the credentials you provided."
+msgstr "似乎沒有任何使用者與你提供的憑證資訊相符。"
+
+#: apps/client/src/services/errors/translate-error.ts:37
+msgid "It looks like the backup code you provided is invalid or used. Please try again."
+msgstr "您提供的備份代碼似乎無效或已使用。請再試一次。"
+
+#: apps/client/src/services/errors/translate-error.ts:19
+msgid "It looks like the reset token you provided is invalid. Please try restarting the password reset process again."
+msgstr "您提供的重置代碼似乎無效。請嘗試重新啟動密碼重置程序。"
+
+#: apps/client/src/services/errors/translate-error.ts:46
+msgid "It looks like the resume you're looking for doesn't exist."
+msgstr "看起來您要找的履歷並不存在。"
+
+#: apps/client/src/services/errors/translate-error.ts:34
+msgid "It looks like the two-factor authentication code you provided is invalid. Please try again."
+msgstr "您提供的雙因子驗證碼似乎無效。請再試一次。"
+
+#: apps/client/src/services/errors/translate-error.ts:22
+msgid "It looks like the verification token you provided is invalid. Please try restarting the verification process again."
+msgstr "您提供的驗證代碼似乎無效。請嘗試重新啟動驗證程序。"
+
+#: apps/client/src/services/errors/translate-error.ts:25
+msgid "It looks like your email address has already been verified."
+msgstr "看來您的電子郵件已通過驗證。"
+
+#: apps/client/src/pages/auth/register/page.tsx:101
+msgctxt "Localized version of a placeholder name. For example, Max Mustermann in German or Jan Kowalski in Polish."
+msgid "John Doe"
+msgstr "無名氏"
+
+#: apps/client/src/pages/auth/register/page.tsx:123
+msgctxt "Localized version of a placeholder username. For example, max.mustermann in German or jan.kowalski in Polish."
+msgid "john.doe"
+msgstr "john.doe"
+
+#: apps/client/src/pages/auth/register/page.tsx:145
+msgctxt "Localized version of a placeholder email. For example, max.mustermann@example.de in German or jan.kowalski@example.pl in Polish."
+msgid "john.doe@example.com"
+msgstr "john.doe@example.com"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:54
+msgid "JSON"
+msgstr "JSON"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:159
+#: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:63
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:138
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:109
+msgid "Keywords"
+msgstr "關鍵詞"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:42
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:52
+msgid "Label"
+msgstr "標籤"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:101
+msgid "Language"
+msgstr "語言"
+
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:83
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:139
+msgid "Last updated {lastUpdated}"
+msgstr "最後更新 {lastUpdated}"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:72
+#: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:197
+#: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:198
+msgid "Layout"
+msgstr "版面配置"
+
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:38
+msgid "Learn more"
+msgstr "瞭解更多"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:44
+msgid "Letter"
+msgstr "信件"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:64
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:77
+msgid "Level"
+msgstr "等級"
+
+#: apps/client/src/components/copyright.tsx:16
+msgid "Licensed under <0>MIT</0>"
+msgstr "以 <0>MIT</0> 授權"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:86
+msgid "Light"
+msgstr "亮色"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:69
+msgid "Light or dark theme"
+msgstr "亮色或暗色主題"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:165
+msgid "Line Height"
+msgstr "線條高度"
+
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/import-card.tsx:33
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/import-item.tsx:22
+msgid "LinkedIn, JSON Resume, etc."
+msgstr "LinkedIn、JSON Resume 等。"
+
+#: apps/client/src/pages/dashboard/resumes/page.tsx:47
+msgid "List"
+msgstr "列表"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:101
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:86
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:81
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:93
+msgid "Location"
+msgstr "地點"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:51
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:115
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:115
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:166
+msgid "Lock"
+msgstr "鎖定"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:64
+msgid "Lock a resume to prevent editing"
+msgstr "鎖定履歷以防止編輯"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:43
+msgid "Locking a resume will prevent any further changes to it. This is useful when you have already shared your resume with someone and you don't want to accidentally make any changes to it."
+msgstr "鎖定履歷可防止任何進一步的變更。當您已經將簡歷分享給他人，而您不想意外地對其進行任何變更時，這將非常有用。"
+
+#: apps/client/src/components/user-options.tsx:38
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:23
+msgid "Logout"
+msgstr "登出"
+
+#: apps/client/src/pages/auth/verify-otp/page.tsx:64
+msgid "Lost your device?"
+msgstr "遺失裝置？"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:247
+msgid "Main"
+msgstr "主要"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:59
+msgid "Manage multiple resumes"
+msgstr "管理多份履歷"
+
+#. The month and year should be uniform across all languages.
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:71
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:69
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:69
+msgid "March 2023"
+msgstr "2023 年 3 月"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:112
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:74
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:82
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:69
+msgid "March 2023 - Present"
+msgstr "2023 年 3 月至今"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:50
+msgid "Margin"
+msgstr "邊界"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:158
+msgid "Max Tokens"
+msgstr "最大 Token"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:48
+msgid "MIT License"
+msgstr "MIT 授權"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:145
+msgid "Model"
+msgstr "模型"
+
+#: apps/client/src/pages/auth/register/page.tsx:98
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:59
+#: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:48
+#: apps/client/src/pages/builder/sidebars/left/dialogs/languages.tsx:36
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:52
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:39
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:39
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:49
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:88
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:153
+msgid "Name"
+msgstr "名稱"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:39
+msgctxt "Name of the Certification"
+msgid "Name"
+msgstr "名稱"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:40
+msgid "Network"
+msgstr "網路"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:96
+msgid "New Password"
+msgstr "新密碼"
+
+#: apps/client/src/components/locale-combobox.tsx:45
+msgid "No results found"
+msgstr "找不到相符的結果"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:49
+msgid "No user tracking or advertising"
+msgstr "無使用者追蹤或廣告"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:133
+msgid "Note: This will make your account less secure."
+msgstr "注意：這會降低您帳戶的安全性。"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:128
+#: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:16
+#: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:17
+msgid "Notes"
+msgstr "注意事項"
+
+#: apps/client/src/pages/auth/verify-otp/page.tsx:82
+msgid "One-Time Password"
+msgstr "一次性密碼"
+
+#: apps/client/src/components/ai-actions.tsx:56
+#: apps/client/src/libs/axios.ts:30
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:188
+#: apps/client/src/services/resume/print.tsx:26
+msgid "Oops, the server returned an error."
+msgstr "哎呀，伺服器傳回錯誤。"
+
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:97
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:77
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:148
+msgid "Open"
+msgstr "開啟"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:47
+msgid "Open Source"
+msgstr "開放原始碼"
+
+#: apps/client/src/services/openai/change-tone.ts:35
+#: apps/client/src/services/openai/fix-grammar.ts:33
+#: apps/client/src/services/openai/improve-writing.ts:33
+msgid "OpenAI did not return any choices for your text."
+msgstr "OpenAI 沒有為您的文字傳回任何選項。"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:52
+msgid "OpenAI Integration"
+msgstr "OpenAI 整合"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:119
+msgid "OpenAI/Ollama API Key"
+msgstr "OpenAI/Ollama API 金鑰"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:79
+msgid "OpenAI/Ollama Integration"
+msgstr "OpenAI/Ollama 整合"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:67
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:182
+msgid "Options"
+msgstr "選項"
+
+#: apps/client/src/pages/auth/layout.tsx:47
+msgctxt "The user can either login with email/password, or continue with GitHub or Google."
+msgid "or continue with"
+msgstr "或繼續使用"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:39
+msgid "Organization"
+msgstr "組織"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:100
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:25
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:26
+msgid "Page"
+msgstr "頁"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:228
+msgid "Page {pageNumber}"
+msgstr "頁面 {pageNumber}"
+
+#: apps/client/src/pages/auth/login/page.tsx:110
+#: apps/client/src/pages/auth/register/page.tsx:163
+#: apps/client/src/pages/auth/reset-password/page.tsx:83
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:73
+msgid "Password"
+msgstr "密碼"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:72
+msgid "PDF"
+msgstr "PDF"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:63
+msgid "Personal notes for each resume"
+msgstr "每份履歷的個人備註"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:81
+msgid "Phone"
+msgstr "電話"
+
+#: apps/client/src/pages/auth/layout.tsx:76
+msgid "Photograph by Patrick Tomasso"
+msgstr "攝影師 Patrick Tomasso"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:66
+msgid "Pick any font from Google Fonts"
+msgstr "從 Google Fonts 挑選任何字型"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/section.tsx:69
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:121
+msgid "Picture"
+msgstr "圖片"
+
+#: apps/client/src/pages/auth/verify-email/page.tsx:59
+msgid "Please note that this step is completely optional."
+msgstr "請注意，這一步驟是完全可選的。"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:225
+msgid "Please select a file type"
+msgstr "請選擇檔案類型"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:228
+msgid "Please store your backup codes in a secure location. You can use one of these one-time use codes to login in case you lose access to your authenticator app."
+msgstr "請將您的備份代碼存放在安全的地方。您可以使用其中一個一次性使用代碼登入，以防萬一遺失驗證器應用程式的存取權。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:99
+msgid "Portrait"
+msgstr "肖像"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:54
+msgctxt "Position held at a company, for example, Software Engineer"
+msgid "Position"
+msgstr "職位"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:53
+msgid "Position"
+msgstr "職位"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:96
+msgid "Powered by"
+msgstr "提供者為"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:94
+msgid "Powered by <0>Simple Icons</0>"
+msgstr "由 <0> 圖標</0> 提供"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:43
+msgid "Primary Color"
+msgstr "主要顏色"
+
+#: apps/client/src/pages/home/components/footer.tsx:50
+msgid "Privacy Policy"
+msgstr "隱私政策"
+
+#: apps/client/src/components/ai-actions.tsx:109
+#: apps/client/src/components/ai-actions.tsx:112
+msgid "Professional"
+msgstr "專業"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:66
+msgid "Profile"
+msgstr "個人設置"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:55
+msgid "Public"
+msgstr "公開"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:53
+msgid "Publisher"
+msgstr "發行者"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:69
+msgid "Raise an issue"
+msgstr "提出問題"
+
+#: apps/client/src/components/copyright.tsx:35
+#: apps/client/src/pages/auth/backup-otp/page.tsx:52
+#: apps/client/src/pages/auth/forgot-password/page.tsx:49
+#: apps/client/src/pages/auth/login/page.tsx:55
+#: apps/client/src/pages/auth/register/page.tsx:64
+#: apps/client/src/pages/auth/reset-password/page.tsx:60
+#: apps/client/src/pages/auth/verify-email/page.tsx:43
+#: apps/client/src/pages/auth/verify-otp/page.tsx:52
+#: apps/client/src/pages/builder/page.tsx:60
+#: apps/client/src/pages/dashboard/resumes/page.tsx:20
+#: apps/client/src/pages/dashboard/settings/page.tsx:16
+#: apps/client/src/pages/home/components/footer.tsx:18
+#: apps/client/src/pages/home/page.tsx:24
+#: apps/client/src/pages/public/page.tsx:74
+#: apps/client/src/pages/public/page.tsx:95
+msgid "Reactive Resume"
+msgstr "Reactive Resume"
+
+#: apps/client/src/pages/home/sections/logo-cloud/index.tsx:39
+msgid "Reactive Resume has helped people land jobs at these great companies:"
+msgstr "Reactive Resume 已經幫助許多人在這些很棒的公司找到工作："
+
+#: apps/client/src/pages/home/sections/support/index.tsx:12
+msgid "Reactive Resume is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Reactive Resume through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
+msgstr "Reactive Resume 是一個免費且開放原始碼的專案，主要由我親手打造，非常感謝您的支持。如果您有貢獻的意願，也只有在您負擔得起的情況下，請考慮透過任何一個列出的平台捐款。此外，透過 Open Collective 對 Reactive Resume 的捐款是免稅的，因為該專案是由 Open Collective Europe 負責財務管理。"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:107
+msgid "Reactive Resume is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
+msgstr "Reactive Resume 是一個經過 3 年多努力的熱情專案，隨著這個過程誕生了一系列反覆琢磨的想法和功能，已經 (趨近) 完美。"
+
+#: apps/client/src/pages/home/sections/contributors/index.tsx:22
+msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
+msgstr "Reactive Resume 的茁壯成長有賴於其充滿活力的社群。這個專案的進展要歸功於許多投入時間與技術的個人。以下，我們讚揚在 GitHub 上強化其功能的程式設計師，以及在 Crowdin 上進行翻譯的語言學家，他們的努力讓更多人可以使用 Reactive Resume。"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:89
+msgid "Redo"
+msgstr "重做"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:100
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:157
+msgid "Remove"
+msgstr "刪除"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:231
+msgid "Remove Page"
+msgstr "刪除頁面"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:111
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:101
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:86
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:152
+msgid "Rename"
+msgstr "重新命名"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:199
+msgid "Resend email confirmation link"
+msgstr "重新傳送電子郵件確認連結"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:152
+msgid "Reset"
+msgstr "重置"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:201
+msgid "Reset Layout"
+msgstr "重設版面配置"
+
+#: apps/client/src/pages/auth/reset-password/page.tsx:60
+#: apps/client/src/pages/auth/reset-password/page.tsx:65
+msgid "Reset your password"
+msgstr "重置密碼"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:124
+msgid "Reset Zoom"
+msgstr "重設縮放"
+
+#: apps/client/src/pages/dashboard/_components/sidebar.tsx:86
+#: apps/client/src/pages/dashboard/resumes/page.tsx:20
+#: apps/client/src/pages/dashboard/resumes/page.tsx:37
+msgid "Resumes"
+msgstr "履歷表"
+
+#: apps/client/src/pages/home/sections/statistics/index.tsx:14
+msgid "Resumes Generated"
+msgstr "生成的履歷表"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:105
+msgid "Rich in features, not in pricing."
+msgstr "功能豐富，價格卻不便宜。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:138
+msgid "Rounded"
+msgstr "圓角"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:180
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:245
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:217
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:131
+msgid "Save Changes"
+msgstr "儲存變更"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:176
+msgid "Save Locally"
+msgstr "儲存至本機"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:176
+msgid "Saved"
+msgstr "已儲存"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:168
+msgid "Scan the QR code below with your authenticator app to setup 2FA on your account."
+msgstr "使用驗證器應用程式掃描下面的 QR 代碼，在您的帳戶上設定 2FA。"
+
+#. Score or honors for the degree, for example, CGPA or magna cum laude
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:92
+msgid "Score"
+msgstr "評分"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:104
+msgid "Scroll to Pan"
+msgstr "捲動到平移"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:104
+msgid "Scroll to Zoom"
+msgstr "捲動縮放"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:111
+msgid "Search for a font family"
+msgstr "搜尋字型系列"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:126
+msgid "Search for a font subset"
+msgstr "搜尋字型的部分字元集合"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:139
+msgid "Search for a font variant"
+msgstr "搜尋字型變體"
+
+#: apps/client/src/components/locale-combobox.tsx:41
+msgid "Search for a language"
+msgstr "搜尋語言"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:56
+msgid "Secure with two-factor authentication"
+msgstr "透過雙因子驗證確保安全"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:65
+msgid "Security"
+msgstr "安全性"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:50
+msgid "Self-host with Docker"
+msgstr "使用 Docker 自行託管"
+
+#: apps/client/src/pages/auth/forgot-password/page.tsx:104
+msgid "Send Email"
+msgstr "傳送電子郵件"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:74
+msgid "Send me a message"
+msgstr "傳送訊息給我"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:97
+msgid "Separate Links"
+msgstr "獨立連結"
+
+#: apps/client/src/components/user-options.tsx:32
+#: apps/client/src/pages/dashboard/_components/sidebar.tsx:92
+#: apps/client/src/pages/dashboard/settings/page.tsx:16
+#: apps/client/src/pages/dashboard/settings/page.tsx:26
+msgid "Settings"
+msgstr "設定"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:159
+msgid "Setup two-factor authentication on your account"
+msgstr "在您的帳戶上設定雙因子驗證"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:107
+#: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:38
+#: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:39
+msgid "Sharing"
+msgstr "分享"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-options.tsx:106
+msgid "Show"
+msgstr "顯示"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:78
+msgid "Show Break Line"
+msgstr "顯示分隔線"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:91
+msgid "Show Page Numbers"
+msgstr "顯示頁碼"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:248
+msgid "Sidebar"
+msgstr "側邊欄"
+
+#: apps/client/src/pages/auth/backup-otp/page.tsx:103
+#: apps/client/src/pages/auth/login/page.tsx:127
+#: apps/client/src/pages/auth/verify-otp/page.tsx:92
+msgid "Sign in"
+msgstr "登入"
+
+#: apps/client/src/pages/auth/register/page.tsx:74
+msgid "Sign in now"
+msgstr "立即登入"
+
+#: apps/client/src/pages/auth/login/page.tsx:55
+#: apps/client/src/pages/auth/login/page.tsx:60
+msgid "Sign in to your account"
+msgstr "登入您的帳戶"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:55
+msgid "Sign in with Email"
+msgstr "用電子郵件登入"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:53
+msgid "Sign in with GitHub"
+msgstr "用 GitHub 帳號登入"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:54
+msgid "Sign in with Google"
+msgstr "使用 Google 帳號登入"
+
+#: apps/client/src/pages/auth/register/page.tsx:179
+msgid "Sign up"
+msgstr "註冊"
+
+#: apps/client/src/pages/auth/login/page.tsx:74
+msgid "Signing in via email is currently disabled by the administrator."
+msgstr "目前管理員已停用透過電子郵件登入。"
+
+#: apps/client/src/pages/auth/register/page.tsx:82
+msgid "Signups are currently disabled by the administrator."
+msgstr "目前管理員已停用註冊功能。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:65
+msgid "Size (in px)"
+msgstr "尺寸 (以 px 為單位)"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:228
+msgid "Slug"
+msgstr "標示碼"
+
+#: apps/client/src/services/errors/translate-error.ts:55
+msgid "Something went wrong while grabbing a preview your resume. Please try again later or raise an issue on GitHub."
+msgstr "在抓取預覽您的簡歷時出了問題。請稍後再試，或在 GitHub 上提出問題。"
+
+#: apps/client/src/services/errors/translate-error.ts:52
+msgid "Something went wrong while printing your resume. Please try again later or raise an issue on GitHub."
+msgstr "列印您的履歷時出了問題。請稍後再試，或在 GitHub 上提出問題。"
+
+#: apps/client/src/services/errors/translate-error.ts:58
+msgid "Something went wrong while processing your request. Please try again later or raise an issue on GitHub."
+msgstr "在處理您的請求時出了問題。請稍後再試，或在 GitHub 上提出問題。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:87
+#: apps/client/src/pages/builder/sidebars/left/sections/picture/options.tsx:132
+msgid "Square"
+msgstr "方形"
+
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-card.tsx:33
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/create-item.tsx:23
+msgid "Start building from scratch"
+msgstr "從零開始建立"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:185
+msgid "Start building your resume by giving it a name."
+msgstr "為您的履歷命名，開始建立您的履歷。"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:114
+#: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:22
+#: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:23
+msgid "Statistics"
+msgstr "統計資料"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:38
+msgid "Statistics are available only for public resumes."
+msgstr "統計資料只適用於公開履歷。"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:162
+msgid "Store your backup codes securely"
+msgstr "安全儲存您的備份代碼"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:101
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:95
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:129
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:138
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:114
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:108
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:95
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:81
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:109
+msgid "Summary"
+msgstr "摘要"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:18
+msgid "Support the app by donating what you can!"
+msgstr "請盡您所能捐款支持此應用程式！"
+
+#: apps/client/src/pages/home/sections/support/index.tsx:9
+msgid "Supporting Reactive Resume"
+msgstr "支持 Reactive Resume"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:65
+msgid "Supports A4/Letter page formats"
+msgstr "支援 A4/Letter 頁面格式"
+
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:85
+msgid "System"
+msgstr "系統"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:65
+#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:18
+#: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:19
+msgid "Template"
+msgstr "範本"
+
+#: apps/client/src/pages/home/sections/templates/index.tsx:9
+msgid "Templates"
+msgstr "範本"
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:68
+msgid "Testimonials"
+msgstr "用戶評價"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:103
+msgid "Text Color"
+msgstr "字型色彩"
+
+#: apps/client/src/services/errors/translate-error.ts:49
+msgid "The resume you want to update is locked, please unlock if you wish to make any changes to it."
+msgstr "您要更新的履歷已鎖定，若要對其進行任何變更，請解除鎖定。"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:86
+#: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:19
+#: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:20
+#: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:79
+msgid "Theme"
+msgstr "佈景主題"
+
+#: apps/client/src/services/errors/translate-error.ts:40
+msgid "There was an error connecting to the browser. Please make sure 'chrome' is running and reachable."
+msgstr "連接瀏覽器時發生錯誤。請確定 'chrome' 正在執行並且可以連線。"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:130
+msgid "This action can be reverted by clicking on the undo button in the floating toolbar."
+msgstr "按一下浮動工具列上的撤消按鈕，即可還原此動作。"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:151
+msgid "This action cannot be undone. This will permanently delete your resume and cannot be recovered."
+msgstr "此動作無法撤銷。這將永久刪除您的履歷，且無法復原。"
+
+#: apps/client/src/services/errors/translate-error.ts:16
+msgid "This email address is associated with an OAuth account. Please sign in with your OAuth provider."
+msgstr "此電子郵件地址與 OAuth 帳戶相關聯。請使用您的 OAuth 供應商登入。"
+
+#: apps/client/src/pages/builder/_components/header.tsx:57
+msgid "This resume is locked, please unlock to make further changes."
+msgstr "此履歷表已鎖定，請解除鎖定以進一步變更。"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:23
+msgid "This section is reserved for your personal notes specific to this resume. The content here remains private and is not shared with anyone else."
+msgstr "這部分專門用於你在這份履歷上做個人筆記。這裡的內容屬於私密，不會與其他人分享。"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:216
+msgid "Tip: You can name the resume referring to the position you are applying for."
+msgstr "祕訣： 您可以參考您申請的職位為履歷命名。"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:39
+msgctxt "Name of the Award"
+msgid "Title"
+msgstr "職稱"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:196
+msgid "Title"
+msgstr "職稱"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:138
+msgid "Toggle Page Break Line"
+msgstr "切換分頁線"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:150
+msgid "Toggle Page Numbers"
+msgstr "切換頁碼"
+
+#: apps/client/src/pages/home/sections/features/index.tsx:68
+msgid "Track views and downloads"
+msgstr "追蹤檢視與下載"
+
+#: apps/client/src/pages/auth/verify-otp/page.tsx:52
+#: apps/client/src/pages/auth/verify-otp/page.tsx:57
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:129
+msgid "Two-Factor Authentication"
+msgstr "雙因子驗證"
+
+#: apps/client/src/services/errors/translate-error.ts:31
+msgid "Two-factor authentication is already enabled for this account."
+msgstr "此帳戶已啟用雙因子驗證。"
+
+#: apps/client/src/services/errors/translate-error.ts:28
+msgid "Two-factor authentication is not enabled for this account."
+msgstr "此帳戶未啟用雙因子驗證。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:84
+msgid "Type <0>delete</0> to confirm deleting your account."
+msgstr "輸入 <0>delete</0> 確認刪除您的帳戶。"
+
+#. For example, Bachelor's Degree or Master's Degree
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:54
+msgid "Type of Study"
+msgstr "研究類型"
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:79
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:76
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:77
+msgid "Typography"
+msgstr "字體樣式"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:203
+msgid "Underline Links"
+msgstr "底線超連結"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:76
+msgid "Undo"
+msgstr "復原"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:52
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/resume-card.tsx:110
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:105
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/resume-item.tsx:161
+msgid "Unlock"
+msgstr "解鎖"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:44
+msgid "Unlocking a resume will allow you to make changes to it again."
+msgstr "解除鎖定履歷可讓您再次對其進行變更。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:192
+msgid "Unverified"
+msgstr "未驗證"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:164
+msgid "Update an existing item"
+msgstr "更新現有項目"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:179
+msgid "Update an existing resume"
+msgstr "更新現有履歷"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:212
+msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
+msgstr "從一個可接受的來源上傳檔案，以解析現有資料，並將其匯入 Reactive Resume 以方便編輯。"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
+msgid "URL"
+msgstr "URL"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/url-input.tsx:61
+msgid "URL must start with https://"
+msgstr "URL 必須以 https:// 開頭"
+
+#: apps/client/src/pages/auth/backup-otp/page.tsx:52
+#: apps/client/src/pages/auth/backup-otp/page.tsx:57
+msgid "Use your backup code"
+msgstr "使用您的備份代碼"
+
+#: apps/client/src/services/errors/translate-error.ts:13
+msgid "User does not have an associated 'secrets' record. Please report this issue on GitHub."
+msgstr "使用者沒有相關的 'secrets' 記錄。請在 GitHub 上報告此問題。"
+
+#: apps/client/src/pages/auth/register/page.tsx:119
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:55
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:167
+msgid "Username"
+msgstr "使用者名稱"
+
+#: apps/client/src/pages/home/sections/statistics/index.tsx:13
+msgid "Users Signed Up"
+msgstr "已註冊使用者"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:296
+msgid "Validate"
+msgstr "確認"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:314
+msgid "Validated"
+msgstr "已驗證"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:97
+msgid "Value"
+msgstr "數值"
+
+#: apps/client/src/pages/dashboard/settings/_sections/account.tsx:192
+msgid "Verified"
+msgstr "已驗證"
+
+#: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:161
+msgid "Verify that two-factor authentication has been setup correctly"
+msgstr "確認已正確設定雙因子驗證"
+
+#: apps/client/src/pages/auth/verify-email/page.tsx:43
+#: apps/client/src/pages/auth/verify-email/page.tsx:48
+msgid "Verify your email address"
+msgstr "確認你的電子郵件地址"
+
+#: apps/client/src/pages/home/sections/hero/index.tsx:26
+msgid "Version 4"
+msgstr "版本 4"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:51
+msgid "Views"
+msgstr "查閱"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/shared/section-list-item.tsx:87
+msgid "Visible"
+msgstr "可見的"
+
+#: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:70
+msgid "Visit <0>Phosphor Icons</0> for a list of available icons"
+msgstr "請造訪<0>Phosphor Icons</0>以取得可用圖示清單"
+
+#: apps/client/src/pages/auth/verify-email/page.tsx:61
+msgid "We verify your email address only to ensure that we can send you a password reset link in case you forget your password."
+msgstr "我們驗證您的電子郵件地址，只是為了確保您忘記密碼時，我們可以寄送密碼重設連結給您。"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:87
+#: apps/client/src/pages/builder/sidebars/left/dialogs/certifications.tsx:81
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:115
+#: apps/client/src/pages/builder/sidebars/left/dialogs/education.tsx:124
+#: apps/client/src/pages/builder/sidebars/left/dialogs/experience.tsx:100
+#: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:69
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:94
+#: apps/client/src/pages/builder/sidebars/left/dialogs/publications.tsx:81
+#: apps/client/src/pages/builder/sidebars/left/dialogs/references.tsx:67
+#: apps/client/src/pages/builder/sidebars/left/dialogs/volunteer.tsx:95
+#: apps/client/src/pages/builder/sidebars/left/sections/basics.tsx:69
+msgid "Website"
+msgstr "個人網站"
+
+#: apps/client/src/pages/home/sections/hero/index.tsx:32
+msgid "What's new in the latest version"
+msgstr "最新版本的新功能"
+
+#: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:164
+#: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:68
+#: apps/client/src/pages/builder/sidebars/left/dialogs/projects.tsx:143
+#: apps/client/src/pages/builder/sidebars/left/dialogs/skills.tsx:114
+msgid "You can add multiple keywords by separating them with a comma or pressing enter."
+msgstr "你可以使用逗號或Enter鍵隔開，新增多個關鍵詞。"
+
+#: apps/client/src/pages/auth/login/page.tsx:99
+msgid "You can also enter your username."
+msgstr "您也可以輸入您的使用者名稱。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:103
+msgid "You can also integrate with Ollama simply by setting the API key to `sk-1234567890abcdef` and the Base URL to your Ollama URL, i.e. `http://localhost:11434/v1`. You can also pick and choose models and set the max tokens as per your preference."
+msgstr "您也可以與 Ollama 整合，只要將 API key 設定為「sk-1234567890abcdef」，並將 Base URL 設定為您的 Ollama URL，即「http://localhost:11434/v1」。您也可以依您的喜好挑選模型並設定最大的 tokens。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:81
+msgid "You can make use of the OpenAI API to help you generate content, or improve your writing while composing your resume."
+msgstr "您可以利用 OpenAI API 協助您生成內容，或在撰寫履歷時改善您的文筆。"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:40
+msgid "You can track the number of views your resume has received, or how many people have downloaded the resume by enabling public sharing."
+msgstr "您可以追蹤履歷的檢視次數，或透過啟用公開分享功能追蹤有多少人下載了履歷。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:87
+msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
+msgstr "您可以選擇 <0>取得自己的 OpenAI API 金鑰</0> 。此金鑰可讓您隨心所欲地使用 API。或者，如果您想要完全停用 Reactive Resume 中的 AI 功能，您可以直接從設定中移除金鑰。"
+
+#: apps/client/src/pages/auth/verify-email/page.tsx:50
+msgid "You should have received an email from <0>Reactive Resume</0> with a link to verify your account."
+msgstr "您應該已經收到一封來自 <0>Reactive Resume</0> 的電子郵件，其中附有驗證您帳戶的連結。"
+
+#: apps/client/src/pages/auth/forgot-password/page.tsx:49
+#: apps/client/src/pages/auth/forgot-password/page.tsx:54
+msgid "You've got mail!"
+msgstr "你有新郵件"
+
+#: apps/client/src/pages/dashboard/settings/_sections/danger.tsx:52
+msgid "Your account and all your data has been deleted successfully. Goodbye!"
+msgstr "您的帳戶和所有資料已成功刪除。再見"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:191
+msgid "Your API key is securely stored in the browser's local storage and is only utilized when making requests to OpenAI via their official SDK. Rest assured that your key is not transmitted to any external server except when interacting with OpenAI's services."
+msgstr "您的 API 密鑰會安全地儲存在瀏覽器的本機儲存空間中，並且僅會在透過官方 SDK 向 OpenAI 提出請求時使用。請放心，除了與 OpenAI 的服務互動時，您的金鑰不會傳送到任何外部伺服器。"
+
+#: apps/client/src/pages/auth/verify-email/page.tsx:28
+msgid "Your email address has been verified successfully."
+msgstr "您的電子郵件地址已成功驗證。"
+
+#: apps/client/src/services/openai/client.ts:11
+msgid "Your OpenAI API Key has not been set yet. Please go to your account settings to enable OpenAI Integration."
+msgstr "您的 OpenAI API 密鑰尚未設定。請前往您的帳戶設定啟用 OpenAI 整合。"
+
+#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:56
+msgid "Your password has been updated successfully."
+msgstr "您的密碼已成功更新。"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:112
+msgid "Zoom In"
+msgstr "放大"
+
+#: apps/client/src/pages/builder/_components/toolbar.tsx:118
+msgid "Zoom Out"
+msgstr "缩小"
+
