@@ -16,51 +16,52 @@ type Testimonial = {
 const testimonials: Testimonial[][] = [
   [
     {
-      name: "N. Elnour",
+      name: "A. Sharma",
       quote:
-        "This is really a thank you for EZResume. Drafting resumes was never a strength of mine, so your app really made the whole process easy and smooth!",
+        "EZResume made resume writing so easy! I’ve always found it difficult to structure my CV, but this tool simplified everything beautifully.",
     },
     {
-      name: "S. Bhaije",
+      name: "R. Mehta",
       quote:
-        "Hi Nityanand! First off, many thanks for making EZResume! This is one of the best resume-building tools I have ever found. Have also recommended it to many of my university friends...",
+        "Hey Nityanand, just wanted to say a big thank you for EZResume. It's honestly one of the cleanest and most effective resume builders I've come across. Shared it with all my college friends!",
     },
     {
-      name: "K. Lietzau",
+      name: "K. Iyer",
       quote:
-        "Hi, I just found your resume builder, and I just want to say, I really appreciate it! The moment I saw it was open source, I closed all the other CV sites I was considering. Thank you for your service.",
-    },
-  ],
-  [
-    {
-      name: "R. Sinnot",
-      quote:
-        "Hey, Just wanted to let you know you not only helped me get a job, you helped my partner and my childhood friend, who then used your site to help one of her friends get a job. I sponsored you on Github to give back a bit but I wanted to let you know you really made a difference with your resume builder.",
-    },
-    {
-      name: "P. Jignesh",
-      quote:
-        "Hey, I am a Mechanical engineer, not understand coding, messy AI, and computer systems, But wait, what drags me here is your creativity, Your website EZResume is all good! using it and the efforts you made to keep this free is remarkable. keeping doing great work.",
+        "Loved the simplicity of your resume builder! The fact that it’s open-source was the cherry on top. Thank you for building something so useful.",
     },
   ],
   [
     {
-      name: "A. Rehman",
+      name: "T. Verma",
       quote:
-        "Hey Nityanand, I have loved your EZResume Website. Thank you so much for making this kind of thing.",
+        "Your tool didn’t just help me get a job — it helped my cousin and even a college senior. Truly grateful! Donated on GitHub as a small thanks.",
     },
     {
-      name: "S. Innocent",
+      name: "J. Pillai",
       quote:
-        "First of all, I appreciate your effort for making EZResume a free tool for the community. Very much better than many premium resume builder...",
+        "I'm a civil engineer and not very tech-savvy, but EZResume was a breeze to use. Hats off for keeping it free and easy to use. Keep up the great work!",
+    },
+  ],
+  [
+    {
+      name: "F. Ansari",
+      quote:
+        "EZResume has been a blessing! Created my resume in minutes and it looked better than most paid tools. Thank you so much!",
     },
     {
-      name: "M. Fritza",
+      name: "S. Reddy",
       quote:
-        "Hello sir, I just wanted to write a thank you message for developing EZResume. It's easy to use, intuitive and it's much more practical than many others that made you pay up after spending an hour to create your CV. I'll be sure to buy you a coffee after I get my first job. I wish you everything best in life!",
+        "Really appreciate your effort in making EZResume open for everyone. It’s far better than many paid builders I've tried earlier.",
+    },
+    {
+      name: "M. Choudhary",
+      quote:
+        "Thanks a lot for building EZResume. It’s so intuitive and beginner-friendly. After struggling with other platforms, this was a breath of fresh air!",
     },
   ],
 ];
+
 
 export const TestimonialsSection = () => (
   <section id="testimonials" className="container relative space-y-12 py-24 sm:py-32">

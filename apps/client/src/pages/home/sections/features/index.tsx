@@ -44,11 +44,11 @@ export const FeaturesSection = () => {
 
   const features: Feature[] = [
     { icon: <CurrencyDollarSimple />, title: t`Free, forever` },
-    { icon: <GitBranch />, title: t`Open Source` },
+  
     { icon: <Scales />, title: t`MIT License` },
     { icon: <Prohibit />, title: t`No user tracking or advertising` },
-    { icon: <Cloud />, title: t`Self-host with Docker` },
-    { icon: <Translate />, title: t`Available in ${languagesCount} languages` },
+  
+  
     { icon: <Brain />, title: t`Gemini Flash 2.0 Integration` },
     { icon: <GithubLogo />, title: t`Sign in with GitHub` },
     { icon: <GoogleLogo />, title: t`Sign in with Google` },

@@ -9,19 +9,21 @@ export const SupportSection = () => (
       <h1 className="text-4xl font-bold">{t`Supporting Reactive Resume`}</h1>
 
       <p className="max-w-4xl leading-loose">
-        {t`Reactive Resume is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Reactive Resume through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe.`}
+      {t`Reactive Resume is a free project built  by me. Your support means a lot! If you're able and willing, consider making a donation through one of the listed platforms. `}
+
       </p>
 
       <div className="flex items-center gap-x-10">
 
-        <a href="https://paypal.me/amruthde" rel="noreferrer noopener nofollow" target="_blank">
+        <a href="https://paypal.me/Nityanand Yadav" rel="noreferrer noopener nofollow" target="_blank">
           {/* eslint-disable-next-line lingui/no-unlocalized-strings */}
           <img src="/support-logos/paypal.svg" className="max-h-[28px]" alt="PayPal" />
         </a>
       </div>
 
       <p className="max-w-4xl leading-loose">
-        {t`Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!`}
+      {t`If you're unable to contribute financially, you can still support Reactive Resume by starring the GitHub repo, sharing it with friends, or sending a quick message about how it helped you. Your feedback and support truly mean a lot!`}
+
       </p>
     </div>
   </section>

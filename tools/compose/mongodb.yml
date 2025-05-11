@@ -1,0 +1,45 @@
+services:
+  # Database (MongoDB)
+  mongodb:
+    image: mongo:latest
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+
+  # Storage (for image uploads)
+  minio:
+    image: minio/minio:latest
+    restart: unless-stopped
+    command: server /data
+    ports:
+      - "9000:9000"
+      - "9001:9001" # Minio Console
+    volumes:
+      - minio_data:/data
+    environment:
+      MINIO_ADDRESS: :9000
+      MINIO_CONSOLE_ADDRESS: :9001
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+
+  # Chrome Browser (for printing and previews)
+  chrome:
+    image: ghcr.io/browserless/chromium:latest
+    restart: unless-stopped
+    ports:
+      - "8080:3000"
+    environment:
+      HEALTH: "true"
+      TOKEN: chrome_token
+      PROXY_HOST: "localhost"
+      PROXY_PORT: 8080
+      PROXY_SSL: "false"
+
+volumes:
+  mongodb_data:
+  minio_data: 

@@ -60,7 +60,7 @@ export const ArtboardPage = () => {
   return (
     <>
       <Helmet>
-        <title>{name} | Reactive Resume</title>
+        <title>{name} | EZ Resume</title>
         {metadata.css.visible && (
           <style id="custom-css" lang="css">
             {metadata.css.value}
