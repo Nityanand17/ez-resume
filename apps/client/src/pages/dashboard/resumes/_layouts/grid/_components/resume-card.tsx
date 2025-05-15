@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import {
   CopySimple,
   FolderOpen,
@@ -20,6 +20,7 @@ import dayjs from "dayjs";
 import { AnimatePresence, motion } from "framer-motion";
 import { useNavigate } from "react-router";
 
+import "@/client/libs/dayjs";
 import { useDialog } from "@/client/stores/dialog";
 
 import { BaseCard } from "./base-card";
@@ -34,7 +35,7 @@ export const ResumeCard = ({ resume }: Props) => {
   const { open: lockOpen } = useDialog<ResumeDto>("lock");
 
   const template = resume.data.metadata.template;
-  const lastUpdated = dayjs().to(resume.updatedAt);
+  const lastUpdated = dayjs(resume.updatedAt).fromNow();
 
   const onOpen = () => {
     void navigate(`/builder/${resume.id}`);

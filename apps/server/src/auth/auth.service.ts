@@ -191,36 +191,7 @@ export class AuthService {
       providers.push("email");
     }
 
-    if (
-      this.configService.get("GITHUB_CLIENT_ID") &&
-      this.configService.get("GITHUB_CLIENT_SECRET") &&
-      this.configService.get("GITHUB_CALLBACK_URL")
-    ) {
-      providers.push("github");
-    }
-
-    if (
-      this.configService.get("GOOGLE_CLIENT_ID") &&
-      this.configService.get("GOOGLE_CLIENT_SECRET") &&
-      this.configService.get("GOOGLE_CALLBACK_URL")
-    ) {
-      providers.push("google");
-    }
-
-    if (
-      this.configService.get("OPENID_AUTHORIZATION_URL") &&
-      this.configService.get("OPENID_CALLBACK_URL") &&
-      this.configService.get("OPENID_CLIENT_ID") &&
-      this.configService.get("OPENID_CLIENT_SECRET") &&
-      this.configService.get("OPENID_ISSUER") &&
-      this.configService.get("OPENID_SCOPE") &&
-      this.configService.get("OPENID_TOKEN_URL") &&
-      this.configService.get("OPENID_USER_INFO_URL")
-    ) {
-      providers.push("openid");
-    }
-
-    return providers;
+    return { providers };
   }
 
   // Email Verification Flows
@@ -306,7 +277,7 @@ export class AuthService {
 
     await this.userService.updateByEmail(email, {
       twoFactorEnabled: true,
-      secrets: { update: { twoFactorBackupCodes: backupCodes } },
+      secrets: { update: { twoFactorBackupCodes: JSON.stringify(backupCodes) } },
     });
 
     return { backupCodes };
@@ -322,7 +293,7 @@ export class AuthService {
 
     await this.userService.updateByEmail(email, {
       twoFactorEnabled: false,
-      secrets: { update: { twoFactorSecret: null, twoFactorBackupCodes: [] } },
+      secrets: { update: { twoFactorSecret: null, twoFactorBackupCodes: JSON.stringify([]) } },
     });
   }
 
@@ -354,16 +325,25 @@ export class AuthService {
       throw new BadRequestException(ErrorMessage.TwoFactorNotEnabled);
     }
 
-    const verified = user.secrets.twoFactorBackupCodes.includes(code);
+    const backupCodesString = user.secrets.twoFactorBackupCodes;
+    if (!backupCodesString) {
+      throw new BadRequestException(ErrorMessage.InvalidTwoFactorBackupCode);
+    }
+    
+    const backupCodes = typeof backupCodesString === 'string' 
+      ? JSON.parse(backupCodesString) 
+      : backupCodesString;
+
+    const verified = backupCodes.includes(code);
 
     if (!verified) {
       throw new BadRequestException(ErrorMessage.InvalidTwoFactorBackupCode);
     }
 
     // Remove the used backup code from the database
-    const backupCodes = user.secrets.twoFactorBackupCodes.filter((c) => c !== code);
+    const updatedBackupCodes = backupCodes.filter((c: string) => c !== code);
     await this.userService.updateByEmail(email, {
-      secrets: { update: { twoFactorBackupCodes: backupCodes } },
+      secrets: { update: { twoFactorBackupCodes: JSON.stringify(updatedBackupCodes) } },
     });
 
     return user as UserWithSecrets;

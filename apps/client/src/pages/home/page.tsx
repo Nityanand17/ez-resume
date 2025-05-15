@@ -1,5 +1,5 @@
-import { t } from "@lingui/macro";
-import { useLingui } from "@lingui/react";
+import { i18n, t } from '@/client/libs/i18n';
+// Removed @lingui/react import:  useLingui ;
 import { Helmet } from "react-helmet-async";
 
 import { FAQSection } from "./sections/faq";
@@ -10,8 +10,6 @@ import { TemplatesSection } from "./sections/templates";
 import { TestimonialsSection } from "./sections/testimonials";
 
 export const HomePage = () => {
-  const { i18n } = useLingui();
-
   return (
     <main className="relative isolate bg-background">
       <Helmet prioritizeSeoTags>

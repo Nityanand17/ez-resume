@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { createId } from "@paralleldrive/cuid2";
 import { CopySimple, PencilSimple, Plus } from "@phosphor-icons/react";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";

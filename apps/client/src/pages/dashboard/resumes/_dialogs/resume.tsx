@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { CaretDown, Flask, MagicWand, Plus } from "@phosphor-icons/react";
 import type { ResumeDto } from "@reactive-resume/dto";
 import { createResumeSchema } from "@reactive-resume/dto";

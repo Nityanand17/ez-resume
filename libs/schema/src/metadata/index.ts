@@ -9,7 +9,7 @@ export const defaultLayout = [
 
 // Schema
 export const metadataSchema = z.object({
-  template: z.string().default("rhyhorn"),
+  template: z.string().default("onyx"),
   layout: z.array(z.array(z.array(z.string()))).default(defaultLayout), // pages -> columns -> sections
   css: z.object({
     value: z.string().default("* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}"),
@@ -47,7 +47,7 @@ export type Metadata = z.infer<typeof metadataSchema>;
 
 // Defaults
 export const defaultMetadata: Metadata = {
-  template: "rhyhorn",
+  template: "onyx",
   layout: defaultLayout,
   css: {
     value: "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",

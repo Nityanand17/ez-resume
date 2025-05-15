@@ -1,4 +1,4 @@
-import { t, Trans } from "@lingui/macro";
+import { t, Trans } from '@/client/libs/i18n';
 import { createId } from "@paralleldrive/cuid2";
 import { DotsSixVertical, Envelope, Plus, X } from "@phosphor-icons/react";
 import type { CustomField as ICustomField } from "@reactive-resume/schema";

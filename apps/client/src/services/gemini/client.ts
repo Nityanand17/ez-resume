@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 import { useLLMStore } from "@/client/stores/llm";

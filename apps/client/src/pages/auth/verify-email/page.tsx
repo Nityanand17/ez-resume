@@ -1,4 +1,4 @@
-import { t, Trans } from "@lingui/macro";
+import { t, Trans } from '@/client/libs/i18n';
 import { ArrowRight, Info, SealCheck } from "@phosphor-icons/react";
 import { Alert, AlertDescription, AlertTitle, Button } from "@reactive-resume/ui";
 import { useEffect } from "react";

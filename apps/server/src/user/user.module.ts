@@ -6,7 +6,7 @@ import { UserController } from "./user.controller";
 import { UserService } from "./user.service";
 
 @Module({
-  imports: [forwardRef(() => AuthModule.register()), StorageModule],
+  imports: [forwardRef(() => AuthModule), StorageModule],
   controllers: [UserController],
   providers: [UserService],
   exports: [UserService],

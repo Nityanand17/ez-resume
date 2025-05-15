@@ -34,22 +34,6 @@ services:
       ADMINER_DEFAULT_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
       ADMINER_DEFAULT_DB: ${POSTGRES_DB:-postgres}
 
-  # Storage (for image uploads)
-  minio:
-    image: minio/minio:latest
-    restart: unless-stopped
-    command: server /data
-    ports:
-      - ${STORAGE_PORT:-9000}:9000
-      - "9001:9001" # Minio Console (Optional)
-    volumes:
-      - minio_data:/data
-    environment:
-      MINIO_ADDRESS: :9000
-      MINIO_CONSOLE_ADDRESS: :9001
-      MINIO_ROOT_USER: ${STORAGE_ACCESS_KEY:-minioadmin}
-      MINIO_ROOT_PASSWORD: ${STORAGE_SECRET_KEY:-minioadmin}
-
   # Chrome Browser (for printing and previews)
   chrome:
     image: ghcr.io/browserless/chromium:latest
@@ -64,5 +48,4 @@ services:
       PROXY_SSL: "false"
 
 volumes:
-  minio_data:
   postgres_data:

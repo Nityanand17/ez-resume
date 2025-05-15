@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import type { AspectRatio } from "@reactive-resume/ui";
 import { Checkbox, Input, Label, ToggleGroup, ToggleGroupItem, Tooltip } from "@reactive-resume/ui";
 import { useMemo } from "react";

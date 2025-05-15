@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { CircleNotch, FileJs, FilePdf } from "@phosphor-icons/react";
 import { buttonVariants, Card, CardContent, CardDescription, CardTitle } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";

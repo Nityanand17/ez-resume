@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { t, Trans } from "@lingui/macro";
+import { t, Trans } from '@/client/libs/i18n';
 import {
   Button,
   Form,

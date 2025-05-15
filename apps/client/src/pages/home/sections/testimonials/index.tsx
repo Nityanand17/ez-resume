@@ -1,7 +1,7 @@
 /* eslint-disable lingui/text-restrictions */
 /* eslint-disable lingui/no-unlocalized-strings */
 
-import { t, Trans } from "@lingui/macro";
+import { t, Trans } from '@/client/libs/i18n';
 import { Quotes } from "@phosphor-icons/react";
 import { cn } from "@reactive-resume/utils";
 import { motion } from "framer-motion";

@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { Plus, PlusCircle } from "@phosphor-icons/react";
 import type {
   Award,

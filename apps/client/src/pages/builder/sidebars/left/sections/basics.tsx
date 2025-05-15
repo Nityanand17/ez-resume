@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { basicsSchema } from "@reactive-resume/schema";
 import { Input, Label } from "@reactive-resume/ui";
 

@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { RichInput } from "@reactive-resume/ui";
 
 import { useResumeStore } from "@/client/stores/resume";

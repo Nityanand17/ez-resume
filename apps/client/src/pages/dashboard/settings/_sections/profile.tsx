@@ -1,11 +1,10 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { t, Trans } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { useTheme } from "@reactive-resume/hooks";
 import {
   Button,
   Combobox,
   Form,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -15,12 +14,10 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-import { LocaleComboboxPopover } from "@/client/components/locale-combobox";
 import { useUpdateUser, useUser } from "@/client/services/user";
 
 const formSchema = z.object({
   theme: z.enum(["system", "light", "dark"]).default("system"),
-  locale: z.string().default("en-US"),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -32,7 +29,7 @@ export const ProfileSettings = () => {
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
-    defaultValues: { theme, locale: "en-US" },
+    defaultValues: { theme },
   });
 
   useEffect(() => {
@@ -42,21 +39,13 @@ export const ProfileSettings = () => {
   const onReset = () => {
     if (!user) return;
 
-    form.reset({ theme, locale: user.locale });
+    form.reset({ theme });
   };
 
   const onSubmit = async (data: FormValues) => {
     if (!user) return;
 
     setTheme(data.theme);
-
-    if (user.locale !== data.locale) {
-      window.localStorage.setItem("locale", data.locale);
-      await updateUser({ locale: data.locale });
-
-      window.location.reload();
-    }
-
     form.reset(data);
   };
 
@@ -89,34 +78,6 @@ export const ProfileSettings = () => {
                     onValueChange={field.onChange}
                   />
                 </div>
-              </FormItem>
-            )}
-          />
-
-          <FormField
-            name="locale"
-            control={form.control}
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t`Language`}</FormLabel>
-                <div className="w-full">
-                  <LocaleComboboxPopover value={field.value} onValueChange={field.onChange} />
-                </div>
-                <FormDescription>
-                  <span>
-                    <Trans>
-                      Don't see your language?{" "}
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer nofollow"
-                        href="https://translate.rxresu.me/"
-                        className="font-medium underline underline-offset-2"
-                      >
-                        Help translate the app.
-                      </a>
-                    </Trans>
-                  </span>
-                </FormDescription>
               </FormItem>
             )}
           />

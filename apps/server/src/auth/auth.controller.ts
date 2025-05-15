@@ -31,12 +31,9 @@ import type { Response } from "express";
 
 import { User } from "../user/decorators/user.decorator";
 import { AuthService } from "./auth.service";
-import { GitHubGuard } from "./guards/github.guard";
-import { GoogleGuard } from "./guards/google.guard";
 import { JwtGuard } from "./guards/jwt.guard";
 import { LocalGuard } from "./guards/local.guard";
 import { MongoDBAtlasGuard } from "./guards/mongodb-atlas.guard";
-import { OpenIDGuard } from "./guards/openid.guard";
 import { RefreshGuard } from "./guards/refresh.guard";
 import { TwoFactorGuard } from "./guards/two-factor.guard";
 import { getCookieOptions } from "./utils/cookie";
@@ -126,58 +123,6 @@ export class AuthController {
     return this.authService.getAuthProviders();
   }
 
-  // OAuth Flows
-  @ApiTags("OAuth", "GitHub")
-  @Get("github")
-  @UseGuards(GitHubGuard)
-  githubLogin() {
-    return;
-  }
-
-  @ApiTags("OAuth", "GitHub")
-  @Get("github/callback")
-  @UseGuards(GitHubGuard)
-  async githubCallback(
-    @User() user: UserWithSecrets,
-    @Res({ passthrough: true }) response: Response,
-  ) {
-    return this.handleAuthenticationResponse(user, response, false, true);
-  }
-
-  @ApiTags("OAuth", "Google")
-  @Get("google")
-  @UseGuards(GoogleGuard)
-  googleLogin() {
-    return;
-  }
-
-  @ApiTags("OAuth", "Google")
-  @Get("google/callback")
-  @UseGuards(GoogleGuard)
-  async googleCallback(
-    @User() user: UserWithSecrets,
-    @Res({ passthrough: true }) response: Response,
-  ) {
-    return this.handleAuthenticationResponse(user, response, false, true);
-  }
-
-  @ApiTags("OAuth", "OpenID")
-  @Get("openid")
-  @UseGuards(OpenIDGuard)
-  openidLogin() {
-    return;
-  }
-
-  @ApiTags("OAuth", "OpenID")
-  @Get("openid/callback")
-  @UseGuards(OpenIDGuard)
-  async openidCallback(
-    @User() user: UserWithSecrets,
-    @Res({ passthrough: true }) response: Response,
-  ) {
-    return this.handleAuthenticationResponse(user, response, false, true);
-  }
-
   @Post("refresh")
   @UseGuards(RefreshGuard)
   async refresh(@User() user: UserWithSecrets, @Res({ passthrough: true }) response: Response) {
@@ -249,7 +194,6 @@ export class AuthController {
   @ApiTags("Two-Factor Auth")
   @HttpCode(200)
   @Post("2fa/verify")
-  @UseGuards(JwtGuard)
   async verify2FACode(
     @User() user: UserWithSecrets,
     @Body() { code }: TwoFactorDto,
@@ -257,18 +201,12 @@ export class AuthController {
   ) {
     await this.authService.verify2FACode(user.email, code);
 
-    const { accessToken, refreshToken } = await this.exchangeToken(user.id, user.email, true);
-
-    response.cookie("Authentication", accessToken, getCookieOptions("access"));
-    response.cookie("Refresh", refreshToken, getCookieOptions("refresh"));
-
-    response.status(200).send(userSchema.parse(user));
+    return this.handleAuthenticationResponse(user, response, true);
   }
 
   @ApiTags("Two-Factor Auth")
   @HttpCode(200)
   @Post("2fa/backup")
-  @UseGuards(JwtGuard)
   async useBackup2FACode(
     @User("id") id: string,
     @User("email") email: string,

@@ -1,0 +1,14 @@
+# Ignore unnecessary files for deployment
+node_modules
+.git
+.nx
+.github
+tmp
+tools/compose
+.dockerignore
+Dockerfile
+compose.yml
+compose.dev.yml
+README.md
+**/.DS_Store
+**/thumbs.db 

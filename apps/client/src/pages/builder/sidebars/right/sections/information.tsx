@@ -1,4 +1,4 @@
-import { t, Trans } from "@lingui/macro";
+import { t, Trans } from '@/client/libs/i18n';
 import { Book, EnvelopeSimpleOpen, GithubLogo, HandHeart } from "@phosphor-icons/react";
 import {
   buttonVariants,
@@ -31,7 +31,7 @@ const DonateCard = () => (
     </CardContent>
     <CardFooter>
       <a
-        href="https://opencollective.com/reactive-resume"
+        href="https://paypal.me/Nityanand Yadav"
         className={cn(buttonVariants({ size: "sm" }))}
         rel="noopener noreferrer nofollow"
         target="_blank"

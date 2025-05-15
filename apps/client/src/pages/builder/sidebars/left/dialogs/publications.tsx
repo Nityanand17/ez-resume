@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { defaultPublication, publicationSchema } from "@reactive-resume/schema";
 import {
   FormControl,

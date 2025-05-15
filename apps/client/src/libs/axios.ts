@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import type { ErrorMessage } from "@reactive-resume/utils";
 import { deepSearchAndParseDates } from "@reactive-resume/utils";
 import _axios from "axios";

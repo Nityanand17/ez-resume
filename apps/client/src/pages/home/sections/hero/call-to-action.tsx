@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { Book, SignOut } from "@phosphor-icons/react";
 import { Button } from "@reactive-resume/ui";
 import { Link } from "react-router";

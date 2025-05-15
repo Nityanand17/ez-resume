@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import {
   Brain,
   Cloud,
@@ -50,10 +50,9 @@ export const FeaturesSection = () => {
   
   
     { icon: <Brain />, title: t`Gemini Flash 2.0 Integration` },
-    { icon: <GithubLogo />, title: t`Sign in with GitHub` },
-    { icon: <GoogleLogo />, title: t`Sign in with Google` },
+
     { icon: <EnvelopeSimple />, title: t`Sign in with Email` },
-    { icon: <Lock />, title: t`Secure with two-factor authentication` },
+
     { icon: <StackSimple />, title: t`${templatesCount} resume templates to choose from` },
     { icon: <Files />, title: t`Design single/multi page resumes` },
     { icon: <Folder />, title: t`Manage multiple resumes` },

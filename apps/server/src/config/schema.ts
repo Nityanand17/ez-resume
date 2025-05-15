@@ -8,7 +8,6 @@ export const configSchema = z.object({
 
   // URLs
   PUBLIC_URL: z.string().url(),
-  STORAGE_URL: z.string().url(),
 
   // Database (Prisma)
   DATABASE_URL: z.string().url().refine(
@@ -41,20 +40,8 @@ export const configSchema = z.object({
     .optional(),
 
   // Storage
-  STORAGE_ENDPOINT: z.string(),
-  STORAGE_PORT: z.coerce.number(),
-  STORAGE_REGION: z.string().default("us-east-1"),
-  STORAGE_BUCKET: z.string(),
-  STORAGE_ACCESS_KEY: z.string(),
-  STORAGE_SECRET_KEY: z.string(),
-  STORAGE_USE_SSL: z
-    .string()
-    .default("false")
-    .transform((s) => s !== "false" && s !== "0"),
-  STORAGE_SKIP_BUCKET_CHECK: z
-    .string()
-    .default("false")
-    .transform((s) => s !== "false" && s !== "0"),
+  STORAGE_PATH: z.string().optional(),
+  STORAGE_URL: z.string().url(),
 
   // Crowdin (Optional)
   CROWDIN_PROJECT_ID: z.string().optional(),

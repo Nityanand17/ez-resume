@@ -20,16 +20,20 @@ export const Providers = () => {
     return () => {
       window.removeEventListener("message", handleMessage, false);
     };
-  }, []);
+  }, [setResume]);
 
   useEffect(() => {
     const resumeData = window.localStorage.getItem("resume");
 
-    if (resumeData) setResume(JSON.parse(resumeData));
-  }, [window.localStorage.getItem("resume")]);
-
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-  if (!resume) return null;
+    if (resumeData) {
+      try {
+        const parsed = JSON.parse(resumeData);
+        setResume(parsed);
+      } catch (error) {
+        console.error("Failed to parse resume data from localStorage:", error);
+      }
+    }
+  }, [setResume]);
 
   return (
     <HelmetProvider context={helmetContext}>

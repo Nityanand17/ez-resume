@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { Plus } from "@phosphor-icons/react";
 import { KeyboardShortcut } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";

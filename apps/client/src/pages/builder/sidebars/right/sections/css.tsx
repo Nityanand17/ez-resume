@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { useTheme } from "@reactive-resume/hooks";
 import { Label, Switch } from "@reactive-resume/ui";
 import Prism from "prismjs";

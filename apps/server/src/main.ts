@@ -1,4 +1,4 @@
-import { Logger } from "@nestjs/common";
+import { Logger, ValidationPipe } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import { NestFactory } from "@nestjs/core";
 import type { NestExpressApplication } from "@nestjs/platform-express";
@@ -7,16 +7,27 @@ import cookieParser from "cookie-parser";
 import session from "express-session";
 import helmet from "helmet";
 import { patchNestJsSwagger } from "nestjs-zod";
+import path from "path";
+import express from "express";
+import { ExpressAdapter } from "@nestjs/platform-express";
 
 import { AppModule } from "./app.module";
 import type { Config } from "./config/schema";
 
 patchNestJsSwagger();
 
-async function bootstrap() {
-  const app = await NestFactory.create<NestExpressApplication>(AppModule, {
-    logger: process.env.NODE_ENV === "development" ? ["debug"] : ["error", "warn", "log"],
-  });
+// For serverless environment
+const server = express();
+
+// Creating new NestJS Application
+async function createApp() {
+  const app = await NestFactory.create<NestExpressApplication>(
+    AppModule, 
+    new ExpressAdapter(server),
+    {
+      logger: process.env.NODE_ENV === "development" ? ["debug"] : ["error", "warn", "log"],
+    }
+  );
 
   const configService = app.get(ConfigService<Config>);
 
@@ -63,13 +74,47 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup("docs", app, document);
 
-  // Port
+  // Serve static files from storage directory
+  const storagePath = process.env.STORAGE_PATH || path.join(process.cwd(), "storage");
+  app.useStaticAssets(storagePath, { prefix: "/storage" });
+
+  // Setup validation pipe
+  app.useGlobalPipes(
+    new ValidationPipe({
+      transform: true,
+      whitelist: true,
+      forbidNonWhitelisted: true,
+    }),
+  );
+
+  return app;
+}
+
+// Bootstrap function for traditional hosting
+async function bootstrap() {
+  const app = await createApp();
+  const configService = app.get(ConfigService<Config>);
   const port = configService.get<number>("PORT") ?? 3000;
-
+  
   await app.listen(port);
-
   Logger.log(`🚀 Server is up and running on port ${port}`, "Bootstrap");
 }
 
-// eslint-disable-next-line unicorn/prefer-top-level-await
-void bootstrap();
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+  // eslint-disable-next-line unicorn/prefer-top-level-await
+  void bootstrap();
+}
+
+// For serverless environments (Vercel)
+let appInstance: NestExpressApplication;
+
+// Handler for serverless functions
+export const handler = async (req: express.Request, res: express.Response) => {
+  if (!appInstance) {
+    appInstance = await createApp();
+    await appInstance.init();
+  }
+  
+  server(req, res);
+};

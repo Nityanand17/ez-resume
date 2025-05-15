@@ -1,6 +1,6 @@
 /* eslint-disable lingui/text-restrictions */
 
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 
 import { DEFAULT_MAX_TOKENS } from "@/client/constants/llm";
 import { useLLMStore } from "@/client/stores/llm";

@@ -291,7 +291,7 @@ export const sampleResume: ResumeData = {
     custom: {},
   },
   metadata: {
-    template: "glalie",
+    template: "onyx",
     layout: [
       [
         ["summary", "experience", "education", "projects", "references"],

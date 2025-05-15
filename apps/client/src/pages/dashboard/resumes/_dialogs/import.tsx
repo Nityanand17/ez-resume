@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { Check, DownloadSimple } from "@phosphor-icons/react";
 import type { JsonResume, LinkedIn, ReactiveResumeV3 } from "@reactive-resume/parser";
 import {

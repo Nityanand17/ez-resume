@@ -15,7 +15,6 @@ import { MailModule } from "./mail/mail.module";
 import { PrinterModule } from "./printer/printer.module";
 import { ResumeModule } from "./resume/resume.module";
 import { StorageModule } from "./storage/storage.module";
-import { TranslationModule } from "./translation/translation.module";
 import { UserModule } from "./user/user.module";
 import { GeminiModule } from "./gemini/gemini.module";
 
@@ -29,25 +28,23 @@ import { GeminiModule } from "./gemini/gemini.module";
     HealthModule,
 
     // Feature Modules
-    AuthModule.register(),
+    AuthModule,
     UserModule,
     ResumeModule,
     StorageModule,
     PrinterModule,
     FeatureModule,
-    TranslationModule,
     GeminiModule,
 
     // Static Assets
     ServeStaticModule.forRoot({
-      serveRoot: "/artboard",
-      // eslint-disable-next-line unicorn/prefer-module
       rootPath: path.join(__dirname, "..", "artboard"),
+      serveRoot: "/artboard",
+      exclude: ["/api*"],
     }),
     ServeStaticModule.forRoot({
-      renderPath: "/*",
-      // eslint-disable-next-line unicorn/prefer-module
       rootPath: path.join(__dirname, "..", "client"),
+      exclude: ["/api*"],
     }),
   ],
   providers: [

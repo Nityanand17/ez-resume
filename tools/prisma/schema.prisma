@@ -3,25 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
+  provider = env("DATABASE_PROVIDER")
   url      = env("DATABASE_URL")
 }
 
-enum Provider {
-  email
-  github
-  google
-  openid
-  mongodb_atlas
-}
-
-enum Visibility {
-  public
-  private
-}
-
 model User {
-  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  id               String   @id @default(uuid())
   name             String
   picture          String?
   username         String   @unique
@@ -31,35 +18,35 @@ model User {
   twoFactorEnabled Boolean  @default(false)
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
-  provider         Provider
+  provider         String   @default("email")
   secrets          Secrets?
   resumes          Resume[]
 }
 
 model Secrets {
-  id                   String   @id @default(auto()) @map("_id") @db.ObjectId
+  id                   String   @id @default(uuid())
   password             String?
   lastSignedIn         DateTime @default(now())
   verificationToken    String?
   twoFactorSecret      String?
-  twoFactorBackupCodes String[] @default([])
+  twoFactorBackupCodes String?
   refreshToken         String?
   resetToken           String?
-  userId               String   @unique @db.ObjectId
+  userId               String   @unique
   user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Resume {
-  id         String     @id @default(auto()) @map("_id") @db.ObjectId
+  id         String   @id @default(uuid())
   title      String
   slug       String
-  data       Json       @default("{}")
-  visibility Visibility @default(private)
-  locked     Boolean    @default(false)
-  userId     String     @db.ObjectId
-  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
-  createdAt  DateTime   @default(now())
-  updatedAt  DateTime   @updatedAt
+  data       String   @default("{}")
+  visibility String   @default("private")
+  locked     Boolean  @default(false)
+  userId     String     
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 
   @@index([userId])
   @@unique([userId, slug])

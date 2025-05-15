@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { CopySimple } from "@phosphor-icons/react";
 import { Button, Input, Label, Switch, Tooltip } from "@reactive-resume/ui";
 import { AnimatePresence, motion } from "framer-motion";

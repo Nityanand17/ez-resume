@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import type { ResumeDto } from "@reactive-resume/dto";
 import {
   AlertDialog,

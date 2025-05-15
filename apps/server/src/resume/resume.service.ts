@@ -25,6 +25,17 @@ export class ResumeService {
     private readonly storageService: StorageService,
   ) {}
 
+  // Helper method to handle resume data for database
+  private handleResumeData(data: any) {
+    return typeof data === 'string' ? data : JSON.stringify(data);
+  }
+
+  // Helper method to parse resume data from database
+  private parseResumeData(data: string | any) {
+    if (!data) return null;
+    return typeof data === 'string' ? JSON.parse(data) : data;
+  }
+
   async create(userId: string, createResumeDto: CreateResumeDto) {
     const { name, email, picture } = await this.prisma.user.findUniqueOrThrow({
       where: { id: userId },
@@ -37,7 +48,7 @@ export class ResumeService {
 
     return this.prisma.resume.create({
       data: {
-        data,
+        data: this.handleResumeData(data),
         userId,
         title: createResumeDto.title,
         visibility: createResumeDto.visibility,
@@ -53,7 +64,7 @@ export class ResumeService {
       data: {
         userId,
         visibility: "private",
-        data: importResumeDto.data,
+        data: this.handleResumeData(importResumeDto.data),
         title: importResumeDto.title ?? randomTitle,
         slug: importResumeDto.slug ?? slugify(randomTitle),
       },
@@ -64,12 +75,20 @@ export class ResumeService {
     return this.prisma.resume.findMany({ where: { userId }, orderBy: { updatedAt: "desc" } });
   }
 
-  findOne(id: string, userId?: string) {
+  async findOne(id: string, userId?: string) {
+    let resume;
     if (userId) {
-      return this.prisma.resume.findUniqueOrThrow({ where: { id, userId } });
+      resume = await this.prisma.resume.findUniqueOrThrow({ where: { id, userId } });
+    } else {
+      resume = await this.prisma.resume.findUniqueOrThrow({ where: { id } });
     }
 
-    return this.prisma.resume.findUniqueOrThrow({ where: { id } });
+    // Parse JSON data
+    if (resume.data && typeof resume.data === 'string') {
+      resume.data = JSON.parse(resume.data);
+    }
+
+    return resume;
   }
 
   async findOneStatistics(id: string) {
@@ -104,7 +123,7 @@ export class ResumeService {
           title: updateResumeDto.title,
           slug: updateResumeDto.slug,
           visibility: updateResumeDto.visibility,
-          data: updateResumeDto.data as Prisma.JsonObject,
+          data: this.handleResumeData(updateResumeDto.data),
         },
         where: { id, userId },
       });

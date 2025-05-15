@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 
 export const SupportSection = () => (
   <section
@@ -9,8 +9,7 @@ export const SupportSection = () => (
       <h1 className="text-4xl font-bold">{t`Supporting Reactive Resume`}</h1>
 
       <p className="max-w-4xl leading-loose">
-      {t`Reactive Resume is a free project built  by me. Your support means a lot! If you're able and willing, consider making a donation through one of the listed platforms. `}
-
+      {t`Reactive Resume is a free and open-source project. Your support means a lot! If you're able and willing, consider making a donation through the platform below.`}
       </p>
 
       <div className="flex items-center gap-x-10">
@@ -23,7 +22,6 @@ export const SupportSection = () => (
 
       <p className="max-w-4xl leading-loose">
       {t`If you're unable to contribute financially, you can still support Reactive Resume by starring the GitHub repo, sharing it with friends, or sending a quick message about how it helped you. Your feedback and support truly mean a lot!`}
-
       </p>
     </div>
   </section>

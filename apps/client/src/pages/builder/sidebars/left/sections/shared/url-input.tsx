@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { Tag } from "@phosphor-icons/react";
 import type { URL } from "@reactive-resume/schema";
 import { urlSchema } from "@reactive-resume/schema";

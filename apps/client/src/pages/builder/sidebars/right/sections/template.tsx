@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { AspectRatio } from "@reactive-resume/ui";
 import { cn, templatesList } from "@reactive-resume/utils";
 import { motion } from "framer-motion";

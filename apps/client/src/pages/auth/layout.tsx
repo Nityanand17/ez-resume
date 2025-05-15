@@ -1,9 +1,8 @@
-import { t } from "@lingui/macro";
+import { t } from "@/client/libs/i18n";
 import { cn } from "@reactive-resume/utils";
 import { useMemo } from "react";
 import { Link, matchRoutes, Outlet, useLocation } from "react-router";
 
-import { LocaleSwitch } from "@/client/components/locale-switch";
 import { Logo } from "@/client/components/logo";
 import { ThemeSwitch } from "@/client/components/theme-switch";
 import { useAuthProviders } from "@/client/services/auth/providers";
@@ -18,9 +17,11 @@ export const AuthLayout = () => {
   const isAuthRoute = useMemo(() => matchRoutes(authRoutes, location) !== null, [location]);
 
   if (!providers) return null;
-
-  // Condition (providers.length === 1) hides the divider if providers[] includes only "email"
-  const hideDivider = !providers.includes("email") || providers.length === 1;
+  
+  const providersArray = providers.providers || [];
+  
+  // Condition (providersArray.length === 1) hides the divider if providersArray includes only "email"
+  const hideDivider = !providersArray.includes("email") || providersArray.length === 1;
 
   return (
     // eslint-disable-next-line tailwindcss/enforces-shorthand -- size-screen not implemented yet
@@ -32,7 +33,6 @@ export const AuthLayout = () => {
           </Link>
 
           <div className="right-0 space-x-2 text-right lg:absolute lg:p-12 lg:text-center">
-            <LocaleSwitch />
             <ThemeSwitch />
           </div>
         </div>
@@ -44,11 +44,7 @@ export const AuthLayout = () => {
             <div className={cn("flex items-center gap-x-4", hideDivider && "hidden")}>
               <hr className="flex-1" />
               <span className="text-xs font-medium">
-                {t({
-                  message: "or continue with",
-                  context:
-                    "The user can either login with email/password, or continue with GitHub or Google.",
-                })}
+                {t`or continue with`}
               </span>
               <hr className="flex-1" />
             </div>

@@ -1,4 +1,4 @@
-import { plural, t } from "@lingui/macro";
+import { plural, t } from '@/client/libs/i18n';
 import {
   ArrowCounterClockwise,
   Broom,

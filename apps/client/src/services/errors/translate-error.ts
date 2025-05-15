@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { ErrorMessage } from "@reactive-resume/utils";
 
 export const translateError = (error: ErrorMessage) => {

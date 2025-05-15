@@ -1,4 +1,4 @@
-import { t } from "@lingui/macro";
+import { t } from '@/client/libs/i18n';
 import { createId } from "@paralleldrive/cuid2";
 import type { ResumeDto } from "@reactive-resume/dto";
 import type { CustomSectionGroup, SectionKey } from "@reactive-resume/schema";
