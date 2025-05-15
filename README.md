@@ -111,6 +111,16 @@ EZ Resume is configured to deploy the client, server, and artboard as a unified 
 
 For detailed instructions, see the [Vercel Deployment Guide](DEPLOYMENT.md).
 
+### Render Deployment
+
+You can also deploy EZ Resume on Render with a similar unified approach:
+
+1. Set up a Web Service for the backend API
+2. Set up a Static Site for the frontend and artboard
+3. Connect them with the appropriate environment variables
+
+For step-by-step instructions, see the [Render Deployment Guide](RENDER_DEPLOYMENT.md).
+
 ### Docker Deployment
 
 ```bash

@@ -1,0 +1,51 @@
+services:
+  # Backend API Service
+  - type: web
+    name: ez-resume-api
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: pnpm install && pnpm prisma:generate && pnpm nx run server:build:production
+    startCommand: node dist/apps/server/main.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_PROVIDER
+        value: mongodb
+      - key: DATABASE_URL
+        sync: false # User must provide this value
+      - key: PORT
+        value: 3000
+      - key: PUBLIC_URL
+        fromService:
+          type: web
+          name: ez-resume-web
+          property: url
+      - key: STORAGE_URL
+        fromService:
+          type: web
+          name: ez-resume-web
+          property: url
+          append: /storage
+      - key: ACCESS_TOKEN_SECRET
+        generateValue: true
+      - key: REFRESH_TOKEN_SECRET
+        generateValue: true
+
+  # Frontend Static Site
+  - type: web
+    name: ez-resume-web
+    env: static
+    region: oregon
+    plan: free
+    buildCommand: pnpm install && pnpm nx run client:build:production && pnpm nx run artboard:build:production
+    staticPublishPath: ./dist/apps/client
+    routes:
+      - source: /artboard/*
+        destination: /artboard/index.html
+      - source: /*
+        destination: /index.html
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache 
