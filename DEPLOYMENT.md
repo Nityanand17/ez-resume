@@ -1,8 +1,8 @@
 # EZ Resume - Deployment Guide
 
-This guide explains how to deploy EZ Resume to different platforms, with a focus on Vercel deployment.
+This guide explains how to deploy the entire EZ Resume application (client, server, and artboard) at once on Vercel.
 
-## Vercel Deployment (Recommended)
+## Vercel Monorepo Deployment (Recommended)
 
 ### Prerequisites
 - A [Vercel account](https://vercel.com/signup)
@@ -19,12 +19,14 @@ This guide explains how to deploy EZ Resume to different platforms, with a focus
 1. Fork this repository or push your code to your GitHub account
 2. Make sure your code is ready for production
 
-### Step 3: Deploy on Vercel
+### Step 3: Set Up Vercel Project
 1. Log in to your Vercel account
 2. Click "Import Project" or "New Project"
-3. Select your GitHub repository
-4. Configure build settings:
+3. Select your GitHub repository with the EZ Resume code
+4. Vercel will automatically detect the NX monorepo structure
+5. Configure build settings:
    - Framework Preset: Other
+   - Root Directory: `/` (root of the monorepo)
    - Build Command: `pnpm vercel-build`
    - Output Directory: `dist/apps/client`
    - Development Command: `pnpm dev`
@@ -43,40 +45,31 @@ Add the following environment variables in your Vercel project settings:
 | STORAGE_URL | Storage URL | https://your-app-name.vercel.app/storage |
 | PORT | Application port | 3000 |
 
-### Step 5: Deploy
+### Step 5: Deploy and Verify
 1. Click "Deploy"
 2. Wait for the build to complete
 3. Your app is now live at your Vercel URL!
+4. Verify that:
+   - The client is accessible at the root URL (https://your-app-name.vercel.app)
+   - The artboard is accessible at /artboard (https://your-app-name.vercel.app/artboard)
+   - The server API is accessible at /api (https://your-app-name.vercel.app/api)
 
-## Other Deployment Options
+## How Vercel Monorepo Deployment Works
 
-### Docker Deployment
+This project uses a unified deployment approach where:
 
-```bash
-# Build the Docker image
-docker build -t ez-resume .
+1. The **Client** frontend is deployed as the main application at the root path
+2. The **Artboard** is served under the /artboard path
+3. The **Server** API is deployed as serverless functions under the /api path
 
-# Run the container
-docker run -p 3000:3000 \
-  -e DATABASE_URL=your_mongo_connection_string \
-  -e ACCESS_TOKEN_SECRET=your_secret \
-  -e REFRESH_TOKEN_SECRET=your_secret \
-  -e PUBLIC_URL=http://your_domain \
-  -e PORT=3000 \
-  ez-resume
-```
+### NX Monorepo Configuration
 
-### Self-hosted Deployment
+Our configuration in `vercel.json` and `package.json` ensures:
 
-1. Build the application:
-   ```bash
-   pnpm build
-   ```
-
-2. Start the server:
-   ```bash
-   NODE_ENV=production pnpm start
-   ```
+- All applications are built during deployment with the `vercel-build` script
+- API routes are correctly mapped to the server application
+- Static assets are served from the correct paths
+- The routing rewrites ensure proper paths for all components
 
 ## Troubleshooting Deployment Issues
 
@@ -91,9 +84,18 @@ docker run -p 3000:3000 \
 - Verify that environment variables are set correctly
 
 ### API Not Working
-- Check the server logs for errors
+- Check the Functions logs in Vercel dashboard
 - Verify that the API routes are configured correctly
-- Make sure the server port matches your environment variable
+- Make sure the serverless function timeout is adequate
+
+## Monitoring Your Deployment
+
+After deploying, Vercel provides several tools to monitor your application:
+
+1. **Analytics**: Track page views, API requests, and performance
+2. **Logs**: View server logs for debugging
+3. **Functions**: Monitor serverless function performance
+4. **Deployments**: Track deployment history and roll back if needed
 
 ## Custom Domain Setup
 
@@ -102,18 +104,9 @@ docker run -p 3000:3000 \
 3. Follow Vercel's DNS configuration instructions
 4. Update your PUBLIC_URL environment variable to match your custom domain
 
-## Maintenance
-
-Once deployed, keep your application updated:
-
-1. Push new changes to your GitHub repository
-2. Vercel will automatically rebuild and deploy your application
-3. Monitor your application for errors or performance issues
-4. Regularly back up your database
-
 ## Need Help?
 
 If you encounter issues during deployment, please:
-1. Check the [issues](https://github.com/yourusername/ez-resume/issues) page
+1. Check the [issues](https://github.com/Nityanand17/ez-resume/issues) page
 2. Open a new issue if you can't find a solution
 3. Provide detailed information about the problem 

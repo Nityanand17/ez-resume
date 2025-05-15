@@ -1,0 +1,24 @@
+{
+  "targets": {
+    "client": {
+      "buildTarget": "client:build:production",
+      "outputPath": "dist/apps/client"
+    },
+    "artboard": {
+      "buildTarget": "artboard:build:production",
+      "outputPath": "dist/apps/artboard"
+    },
+    "server": {
+      "buildTarget": "server:build:production",
+      "outputPath": "dist/apps/server"
+    }
+  },
+  "cacheConfig": {
+    "patterns": [
+      "!node_modules",
+      "!dist",
+      "!.nx",
+      "!.git"
+    ]
+  }
+} 

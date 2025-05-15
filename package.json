@@ -18,7 +18,7 @@
     "test": "pnpm vitest run",
     "prebuild": "pnpm prisma:generate",
     "build": "nx run-many -t build",
-    "vercel-build": "pnpm prisma:generate && nx run client:build:production && nx run artboard:build:production",
+    "vercel-build": "pnpm prisma:generate && nx run client:build:production && nx run artboard:build:production && nx run server:build:production",
     "prestart": "pnpm prisma:migrate",
     "start": "node dist/apps/server/main",
     "lint": "nx run-many -t lint",

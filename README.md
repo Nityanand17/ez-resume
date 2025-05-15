@@ -37,7 +37,7 @@ A modern, free and open-source resume builder that simplifies creating, updating
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ez-resume.git
+git clone https://github.com/Nityanand17/ez-resume.git
 cd ez-resume
 
 # Install dependencies
@@ -98,9 +98,18 @@ STORAGE_URL=http://localhost:3000/storage
 
 ## 🌍 Deployment
 
-### Vercel Deployment
+### Vercel Deployment (All Apps at Once)
 
-For detailed instructions on deploying to Vercel, see the [Vercel Deployment Guide](VERCEL_DEPLOYMENT.md).
+EZ Resume is configured to deploy the client, server, and artboard as a unified application on Vercel.
+
+1. Connect your GitHub repository to Vercel
+2. Use the following settings:
+   - Build Command: `pnpm vercel-build`
+   - Output Directory: `dist/apps/client`
+3. Set the required environment variables in your Vercel project
+4. Deploy and enjoy your all-in-one resume builder!
+
+For detailed instructions, see the [Vercel Deployment Guide](DEPLOYMENT.md).
 
 ### Docker Deployment
 

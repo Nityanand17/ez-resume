@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "pnpm build",
+  "buildCommand": "pnpm vercel-build",
   "outputDirectory": "dist/apps/client",
   "installCommand": "pnpm install",
   "framework": "vite",
@@ -10,14 +10,27 @@
       "destination": "/api/$1"
     },
     {
+      "source": "/artboard",
+      "destination": "/artboard/index.html"
+    },
+    {
+      "source": "/artboard/(.*)",
+      "destination": "/artboard/$1"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/$1"
     }
   ],
   "functions": {
     "api/**/*.js": {
       "memory": 1024,
       "maxDuration": 10
+    }
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
     }
   }
 } 
