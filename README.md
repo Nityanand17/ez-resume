@@ -180,7 +180,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 
 ## 🙏 Acknowledgements
 
-- Built on the foundation of [Reactive Resume](https://github.com/AmruthPillai/Reactive-Resume)
+- Built on the foundation of [EZ Resume](https://github.com/Nityanand17/ez-esume)
 - UI components from Radix UI
 - Icons from Phosphor Icons
 
